@@ -20,9 +20,7 @@ CHAPTERS = [
         """
 ## Hello, SlashNew
 
-Thanks for being here. I'm **@Codess-Aus**, and for the next 45 minutes I want to talk to you about something that has been keeping me, and a lot of the engineers I work with, awake at night.
-
-We are shipping AI faster than we are learning to govern it.
+Thanks for being here. I'm **@Codess-Aus**, and I want to talk to you about something that has been on my mind a lot: we are shipping AI faster than we are learning to govern it.
 
 That isn't a doom statement. I'm wildly optimistic about where this is going. But optimism without rigor is just marketing. So this talk is the rigor I wish someone had handed me eighteen months ago.
 
@@ -93,7 +91,7 @@ If you can answer those three crisply, you're probably on the right side of Rule
         """
 ## The Standard, decoded
 
-Microsoft's Responsible AI Standard is a beautifully comprehensive document. It is also 80+ pages long, and most of your team will never read it. That's fine. Here's the working version.
+Microsoft's Responsible AI Standard is a comprehensive document, and most of your team will never read it cover to cover. That's fine. Here's the working version.
 
 The Standard asks you, for every AI feature, to be able to answer:
 
@@ -114,7 +112,7 @@ You don't need a Responsible AI center of excellence to start. You need:
 - An **eval harness** that runs on every PR that touches the prompt, the model, or the tools.
 - A **named owner** in the README.
 
-Those three artefacts will get you 80% of the value of the Standard, today.
+Those three artefacts will get you a long way toward what the Standard is asking for, today.
 
 ## Further reading
 
@@ -137,7 +135,7 @@ That isn't how humans work. People trust systems that are:
 - **Recoverable**, when it's wrong, I can fix it without drama.
 - **Bounded**, I know what it *won't* do.
 
-You can have a 99% accurate model that nobody trusts, and an 85% accurate one that an entire team relies on. The difference is almost always one of those four things.
+A highly accurate model that nobody trusts is less useful than a slightly less accurate one that an entire team relies on. The difference is almost always one of those four things.
 
 ## The trust contract
 
@@ -166,9 +164,9 @@ That loop is why people trust agent mode. Take any of those steps out and trust 
         """
 ## This is the moment
 
-I want to be careful with hype. But I also want to be honest: something genuinely new is happening in software.
+I want to be careful with hype. But something genuinely new is happening in software.
 
-For most of my career, the bottleneck on a team has been **typing-speed-of-thought**, how fast we can translate an idea into working code. We're now living through the first technology that meaningfully moves that bottleneck.
+For a long time, the bottleneck on a team has been **typing-speed-of-thought**, how fast we can translate an idea into working code. We're now living through the first technology that meaningfully moves that bottleneck.
 
 That doesn't mean engineers are obsolete. It means the *shape* of engineering is changing.
 
@@ -225,7 +223,7 @@ The features we used to call bugs are the surface area you build trust on top of
         """
 ## HITL is not a checkbox
 
-Half the "human in the loop" systems I've reviewed are theatre. There's a human, technically, looking at a stream of approvals at 3 a.m., clicking "yes" 400 times in a row. That isn't oversight. That's a rubber stamp with a salary.
+A lot of "human in the loop" systems end up as theatre. There's a human, technically, looking at a stream of approvals, clicking "yes" over and over. That isn't oversight. That's a rubber stamp.
 
 Real HITL has three properties:
 
@@ -258,7 +256,7 @@ Pick the pattern that matches the **blast radius** of the decision, not the conv
         """
 ## The replacement framing is wrong
 
-Every few weeks someone publishes a "X% of engineering jobs will be automated" piece. They are mostly wrong, and they are mostly wrong in the same way: they confuse **tasks** with **jobs**.
+A lot of commentary frames AI as replacing engineers. That framing is mostly wrong, and it's mostly wrong in the same way: it confuses **tasks** with **jobs**.
 
 Yes, a lot of tasks I used to do by hand, boilerplate, scaffolding, first-draft docs, glue code, are now one prompt away. That's good. None of that was the job.
 
@@ -271,7 +269,7 @@ The job was, and is:
 
 ## Amplification in practice
 
-The teams I see thriving with Copilot share a few habits:
+Teams that thrive with Copilot tend to share a few habits:
 
 - They **review every diff** the agent produces, the same way they'd review a junior engineer's PR.
 - They invest in **specs and tests** more than they used to, because those are the artefacts that steer the agent.
@@ -470,27 +468,33 @@ Agentic AI is genuinely amazing for accessibility, voice interfaces, summarizati
     ),
     (
         "15-realworld", "15-realworld.png", "15", "Real-World Stories", "Stories",
-        "Three short case studies, what worked, what broke, and what we learned.",
+        "Patterns and anti-patterns from shipping AI into real systems.",
         """
-## Story 1, The triage agent that worked
+## From the field
 
-A platform team built a Copilot-driven triage agent for their issue tracker. It read new issues, suggested labels, owners and priority, and posted as a draft comment. A human always pressed the button.
+Rather than tell you specific stories, I want to share the *patterns* that keep showing up when teams ship AI features. None of these are unique. All of them are worth knowing about before you hit them yourself.
 
-**Why it worked:** the agent never *acted*, it always *suggested*. Approval was the default human workflow anyway. Median triage time dropped 60% in eight weeks. Nobody felt replaced. Several engineers said it was the first internal AI tool they actually liked.
+## Patterns that tend to work
 
-## Story 2, The PR bot that broke
+- **Suggest, don't act.** When the AI proposes and a human approves, the existing review culture does the safety work for you.
+- **Route through a PR.** If the agent's output is a pull request, you already have audit, review, rollback and CODEOWNERS for free.
+- **Scope tightly.** A small, well-defined task with a narrow blast radius almost always lands better than a broad, ambitious one.
+- **Show your work.** Citations, plans and diffs in the UI build more trust than higher accuracy ever will.
+- **Have an off switch.** Per feature, per tenant, per tool. Tested.
 
-Another team wired an agent to auto-close stale PRs and post a templated comment. It went well for three weeks. Then a long-running fork-of-a-fork PR, the only path to a critical hotfix, got auto-closed at 2 a.m. on a Sunday.
+## Anti-patterns to watch for
 
-**Why it broke:** no blast-radius thinking. The agent had no awareness of *which* PRs were safe to close. The fix wasn't to make the agent smarter. The fix was to **scope it**, only close PRs older than 90 days *and* with no commits from CODEOWNERS *and* with no linked incident.
+- **Approval theatre.** A human is "in the loop" but couldn't realistically review every item in the stream.
+- **No blast-radius thinking.** An automation is given the power to take an action it can't reasonably undo.
+- **Silent drift.** A model or prompt change ships and nobody notices the behaviour shifted because there were no evals.
+- **Hidden AI.** Users can't tell they're talking to an AI, or can't tell *which* parts of the experience were generated.
+- **One-way decisions.** The system can act, but the user has no path to challenge, correct or appeal.
 
-## Story 3, The eval suite that saved us
+## A useful frame
 
-A team shipped a customer-facing summarization feature. Two months in, a routine model update silently changed tone, summaries became more confident and less hedged. Nobody noticed until a customer complained.
+> The system is the unit of reliability, not the model.
 
-The eval suite caught it on the next run, with a regression on the "hedging" axis. The team rolled back the model in 40 minutes. Without the eval suite, this would have been a much worse story.
-
-> Lesson across all three: **the system is the unit of reliability, not the model**. Ship the system.
+The same model can be safe in one product and unsafe in another. The thing you're shipping is the *system around the model*: the prompts, the tools, the guardrails, the UI, the review process, the rollback. That is what you are accountable for.
 """,
     ),
     (
@@ -533,7 +537,7 @@ If your team is in Wave 3 with Wave 1 governance, you will have a bad week. Buil
 
 Most AI governance programs fail in one of two ways:
 
-1. **Too heavy.** Every feature requires a 40-page review. Teams route around you. Shadow AI flourishes.
+1. **Too heavy.** Every feature requires a long, heavy review. Teams route around you. Shadow AI flourishes.
 2. **Too light.** Anyone can ship anything. Eventually something embarrassing happens. The pendulum swings to (1).
 
 The goal is the middle: **light-touch, high-trust, well-instrumented.**
@@ -548,7 +552,7 @@ The goal is the middle: **light-touch, high-trust, well-instrumented.**
 
 ## Make the right thing the easy thing
 
-The most successful governance teams I've worked with don't *gate*, they *enable*. They ship:
+The most successful governance teams don't *gate*, they *enable*. They ship:
 
 - A blessed prompt library.
 - A blessed eval harness.

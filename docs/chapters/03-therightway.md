@@ -18,7 +18,7 @@ description: "Microsoft's Responsible AI Standard, in plain English. What it act
 *Microsoft's Responsible AI Standard, in plain English. What it actually asks of you on a Tuesday.*
 ## The Standard, decoded
 
-Microsoft's Responsible AI Standard is a beautifully comprehensive document. It is also 80+ pages long, and most of your team will never read it. That's fine. Here's the working version.
+Microsoft's Responsible AI Standard is a comprehensive document, and most of your team will never read it cover to cover. That's fine. Here's the working version.
 
 The Standard asks you, for every AI feature, to be able to answer:
 
@@ -39,7 +39,7 @@ You don't need a Responsible AI center of excellence to start. You need:
 - An **eval harness** that runs on every PR that touches the prompt, the model, or the tools.
 - A **named owner** in the README.
 
-Those three artefacts will get you 80% of the value of the Standard, today.
+Those three artefacts will get you a long way toward what the Standard is asking for, today.
 
 ## Further reading
 

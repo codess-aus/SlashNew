@@ -20,7 +20,7 @@ description: "How to do AI governance without becoming the team everyone routes 
 
 Most AI governance programs fail in one of two ways:
 
-1. **Too heavy.** Every feature requires a 40-page review. Teams route around you. Shadow AI flourishes.
+1. **Too heavy.** Every feature requires a long, heavy review. Teams route around you. Shadow AI flourishes.
 2. **Too light.** Anyone can ship anything. Eventually something embarrassing happens. The pendulum swings to (1).
 
 The goal is the middle: **light-touch, high-trust, well-instrumented.**
@@ -35,7 +35,7 @@ The goal is the middle: **light-touch, high-trust, well-instrumented.**
 
 ## Make the right thing the easy thing
 
-The most successful governance teams I've worked with don't *gate*, they *enable*. They ship:
+The most successful governance teams don't *gate*, they *enable*. They ship:
 
 - A blessed prompt library.
 - A blessed eval harness.

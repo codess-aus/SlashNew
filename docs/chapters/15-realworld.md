@@ -1,6 +1,6 @@
 ---
 title: "15 · Real-World Stories"
-description: "Three short case studies, what worked, what broke, and what we learned."
+description: "Patterns and anti-patterns from shipping AI into real systems."
 ---
 
 <div class="sn-hero" markdown>
@@ -15,23 +15,29 @@ description: "Three short case studies, what worked, what broke, and what we lea
 
 # Real-World Stories
 
-*Three short case studies, what worked, what broke, and what we learned.*
-## Story 1, The triage agent that worked
+*Patterns and anti-patterns from shipping AI into real systems.*
+## From the field
 
-A platform team built a Copilot-driven triage agent for their issue tracker. It read new issues, suggested labels, owners and priority, and posted as a draft comment. A human always pressed the button.
+Rather than tell you specific stories, I want to share the *patterns* that keep showing up when teams ship AI features. None of these are unique. All of them are worth knowing about before you hit them yourself.
 
-**Why it worked:** the agent never *acted*, it always *suggested*. Approval was the default human workflow anyway. Median triage time dropped 60% in eight weeks. Nobody felt replaced. Several engineers said it was the first internal AI tool they actually liked.
+## Patterns that tend to work
 
-## Story 2, The PR bot that broke
+- **Suggest, don't act.** When the AI proposes and a human approves, the existing review culture does the safety work for you.
+- **Route through a PR.** If the agent's output is a pull request, you already have audit, review, rollback and CODEOWNERS for free.
+- **Scope tightly.** A small, well-defined task with a narrow blast radius almost always lands better than a broad, ambitious one.
+- **Show your work.** Citations, plans and diffs in the UI build more trust than higher accuracy ever will.
+- **Have an off switch.** Per feature, per tenant, per tool. Tested.
 
-Another team wired an agent to auto-close stale PRs and post a templated comment. It went well for three weeks. Then a long-running fork-of-a-fork PR, the only path to a critical hotfix, got auto-closed at 2 a.m. on a Sunday.
+## Anti-patterns to watch for
 
-**Why it broke:** no blast-radius thinking. The agent had no awareness of *which* PRs were safe to close. The fix wasn't to make the agent smarter. The fix was to **scope it**, only close PRs older than 90 days *and* with no commits from CODEOWNERS *and* with no linked incident.
+- **Approval theatre.** A human is "in the loop" but couldn't realistically review every item in the stream.
+- **No blast-radius thinking.** An automation is given the power to take an action it can't reasonably undo.
+- **Silent drift.** A model or prompt change ships and nobody notices the behaviour shifted because there were no evals.
+- **Hidden AI.** Users can't tell they're talking to an AI, or can't tell *which* parts of the experience were generated.
+- **One-way decisions.** The system can act, but the user has no path to challenge, correct or appeal.
 
-## Story 3, The eval suite that saved us
+## A useful frame
 
-A team shipped a customer-facing summarization feature. Two months in, a routine model update silently changed tone, summaries became more confident and less hedged. Nobody noticed until a customer complained.
+> The system is the unit of reliability, not the model.
 
-The eval suite caught it on the next run, with a regression on the "hedging" axis. The team rolled back the model in 40 minutes. Without the eval suite, this would have been a much worse story.
-
-> Lesson across all three: **the system is the unit of reliability, not the model**. Ship the system.
+The same model can be safe in one product and unsafe in another. The thing you're shipping is the *system around the model*: the prompts, the tools, the guardrails, the UI, the review process, the rollback. That is what you are accountable for.

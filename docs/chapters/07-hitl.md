@@ -18,7 +18,7 @@ description: "HITL done well is empowering, not theatre. A practical pattern cat
 *HITL done well is empowering, not theatre. A practical pattern catalogue.*
 ## HITL is not a checkbox
 
-Half the "human in the loop" systems I've reviewed are theatre. There's a human, technically, looking at a stream of approvals at 3 a.m., clicking "yes" 400 times in a row. That isn't oversight. That's a rubber stamp with a salary.
+A lot of "human in the loop" systems end up as theatre. There's a human, technically, looking at a stream of approvals, clicking "yes" over and over. That isn't oversight. That's a rubber stamp.
 
 Real HITL has three properties:
 

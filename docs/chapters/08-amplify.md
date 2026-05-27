@@ -18,7 +18,7 @@ description: "The teams winning with Copilot aren't replacing engineers. They're
 *The teams winning with Copilot aren't replacing engineers. They're amplifying judgment.*
 ## The replacement framing is wrong
 
-Every few weeks someone publishes a "X% of engineering jobs will be automated" piece. They are mostly wrong, and they are mostly wrong in the same way: they confuse **tasks** with **jobs**.
+A lot of commentary frames AI as replacing engineers. That framing is mostly wrong, and it's mostly wrong in the same way: it confuses **tasks** with **jobs**.
 
 Yes, a lot of tasks I used to do by hand, boilerplate, scaffolding, first-draft docs, glue code, are now one prompt away. That's good. None of that was the job.
 
@@ -31,7 +31,7 @@ The job was, and is:
 
 ## Amplification in practice
 
-The teams I see thriving with Copilot share a few habits:
+Teams that thrive with Copilot tend to share a few habits:
 
 - They **review every diff** the agent produces, the same way they'd review a junior engineer's PR.
 - They invest in **specs and tests** more than they used to, because those are the artefacts that steer the agent.

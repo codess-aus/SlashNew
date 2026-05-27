@@ -27,7 +27,7 @@ That isn't how humans work. People trust systems that are:
 - **Recoverable**, when it's wrong, I can fix it without drama.
 - **Bounded**, I know what it *won't* do.
 
-You can have a 99% accurate model that nobody trusts, and an 85% accurate one that an entire team relies on. The difference is almost always one of those four things.
+A highly accurate model that nobody trusts is less useful than a slightly less accurate one that an entire team relies on. The difference is almost always one of those four things.
 
 ## The trust contract
 

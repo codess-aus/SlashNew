@@ -168,7 +168,7 @@ title: Humans at the Heart
     <div class="sn-card-body">
       <div class="sn-cat">Stories</div>
       <h3>Real-World Stories</h3>
-      <p>Three short case studies, what worked, what broke, and what we learned from shipping agents in production.</p>
+      <p>Patterns and anti-patterns from shipping AI into real systems.</p>
       <div class="sn-read">Read more →</div>
     </div>
   </a>

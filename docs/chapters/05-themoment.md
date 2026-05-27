@@ -18,9 +18,9 @@ description: "We're inside the inflection. Why "general-purpose reasoning in the
 *We're inside the inflection. Why "general-purpose reasoning in the IDE" changes the shape of every team.*
 ## This is the moment
 
-I want to be careful with hype. But I also want to be honest: something genuinely new is happening in software.
+I want to be careful with hype. But something genuinely new is happening in software.
 
-For most of my career, the bottleneck on a team has been **typing-speed-of-thought**, how fast we can translate an idea into working code. We're now living through the first technology that meaningfully moves that bottleneck.
+For a long time, the bottleneck on a team has been **typing-speed-of-thought**, how fast we can translate an idea into working code. We're now living through the first technology that meaningfully moves that bottleneck.
 
 That doesn't mean engineers are obsolete. It means the *shape* of engineering is changing.
 
