@@ -47,9 +47,9 @@
   --md-typeset-color: #ffffff;
   --md-typeset-a-color: var(--sn-green-bright);
 
-  --md-primary-fg-color: var(--sn-green-deep);
-  --md-primary-fg-color--light: var(--sn-green);
-  --md-primary-fg-color--dark: #0a1505;
+  --md-primary-fg-color: #0a1505;
+  --md-primary-fg-color--light: #14241a;
+  --md-primary-fg-color--dark: #050a02;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #ffffff;
 
@@ -81,9 +81,9 @@
   --md-typeset-color: #000000;
   --md-typeset-a-color: var(--sn-green-deep);
 
-  --md-primary-fg-color: var(--sn-green-deep);
-  --md-primary-fg-color--light: var(--sn-green);
-  --md-primary-fg-color--dark: #1a3608;
+  --md-primary-fg-color: #0a1505;
+  --md-primary-fg-color--light: #14241a;
+  --md-primary-fg-color--dark: #050a02;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #ffffff;
 
@@ -122,12 +122,14 @@ body,
   letter-spacing: -0.01em;
 }
 
-/* H1 / H2 use the brand green in BOTH modes, AA contrast on white & black */
+/* H1 / H2: lime green on dark mode, pure black on light mode (the
+   slide accent #92D050 is unreadable on white, so light mode reverts
+   to pure black per the no-grey rule). */
 .md-typeset h1 {
   color: var(--sn-green-bright);
 }
 [data-md-color-scheme="slashnew-light"] .md-typeset h1 {
-  color: var(--sn-green-deep);
+  color: #000000;
 }
 
 .md-typeset h2 {
@@ -135,7 +137,7 @@ body,
   margin-top: 2.4rem;
 }
 [data-md-color-scheme="slashnew-light"] .md-typeset h2 {
-  color: var(--sn-green-deep);
+  color: #000000;
 }
 
 /* H3+ stays pure white/black for max contrast */
@@ -163,15 +165,11 @@ body,
   opacity: 1 !important;
 }
 
-/* Header bar */
+/* Header bar: dark near-black with a lime accent stripe along the bottom */
 .md-header {
-  background: linear-gradient(
-    100deg,
-    #0a1505 0%,
-    var(--sn-green-deep) 50%,
-    var(--sn-pink) 130%
-  );
+  background: #0a1505;
   color: #ffffff;
+  border-bottom: 3px solid var(--sn-green-bright);
 }
 .md-header__title,
 .md-header__topic,
@@ -206,33 +204,20 @@ body,
   position: relative;
   margin: -1.5rem -1.5rem 2rem -1.5rem;
   padding: 2.4rem 1.5rem 3rem 1.5rem;
-  background: radial-gradient(
-      circle at 20% 20%,
-      rgba(146, 208, 80, 0.35),
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at 80% 30%,
-      rgba(61, 112, 22, 0.25),
-      transparent 60%
-    ),
-    linear-gradient(180deg, #0a1505 0%, #0b0b12 100%);
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(146, 208, 80, 0.38), transparent 65%),
+    linear-gradient(180deg, #0f1a08 0%, #0b0b12 100%);
   text-align: center;
-  border-bottom: 1px solid rgba(146, 208, 80, 0.3);
+  border-bottom: 2px solid var(--sn-green-bright);
+  color: #ffffff;
 }
 
+/* Same dark+lime treatment in light mode — the slides themselves are dark,
+   so the hero stays dark to faithfully showcase the #92D050 accent. */
 [data-md-color-scheme="slashnew-light"] .sn-hero {
-  background: radial-gradient(
-      circle at 20% 20%,
-      rgba(146, 208, 80, 0.35),
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at 80% 30%,
-      rgba(61, 112, 22, 0.25),
-      transparent 60%
-    ),
-    linear-gradient(180deg, #1a3608 0%, #3d7016 100%);
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(146, 208, 80, 0.38), transparent 65%),
+    linear-gradient(180deg, #0f1a08 0%, #0b0b12 100%);
   color: #ffffff;
 }
 
@@ -278,17 +263,17 @@ body,
   padding: 4.5rem 1.5rem 4.5rem 1.5rem;
   text-align: center;
   background:
-    radial-gradient(ellipse at 50% 40%, rgba(109, 168, 50, 0.45), transparent 65%),
-    radial-gradient(ellipse at 20% 10%, rgba(61, 112, 22, 0.35), transparent 60%),
-    linear-gradient(180deg, #0a1505 0%, #0b0b12 100%);
-  border-bottom: 1px solid rgba(146, 208, 80, 0.18);
+    radial-gradient(ellipse at 50% 40%, rgba(146, 208, 80, 0.45), transparent 65%),
+    linear-gradient(180deg, #0f1a08 0%, #0b0b12 100%);
+  border-bottom: 2px solid var(--sn-green-bright);
+  color: #ffffff;
 }
 
 [data-md-color-scheme="slashnew-light"] .sn-landing {
   background:
-    radial-gradient(ellipse at 50% 40%, rgba(109, 168, 50, 0.55), transparent 65%),
-    radial-gradient(ellipse at 20% 10%, rgba(61, 112, 22, 0.45), transparent 60%),
-    linear-gradient(180deg, #1a3608 0%, #0a1505 100%);
+    radial-gradient(ellipse at 50% 40%, rgba(146, 208, 80, 0.45), transparent 65%),
+    linear-gradient(180deg, #0f1a08 0%, #0b0b12 100%);
+  color: #ffffff;
 }
 
 .sn-landing h1 {
