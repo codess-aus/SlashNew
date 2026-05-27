@@ -1,0 +1,99 @@
+site_name: Scaling Guacamole
+site_description: Responsible Agentic AI — a SlashNew Conf 2026 talk by @Codess-Aus
+site_author: "@Codess-Aus"
+site_url: https://codess-aus.github.io/SlashNew/
+repo_url: https://github.com/codess-aus/SlashNew
+repo_name: codess-aus/SlashNew
+edit_uri: ""
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  font: false        # we load Mona Sans / Calibri ourselves in extra.css
+  favicon: assets/0-title.png
+  logo: assets/0-title.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - toc.follow
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: slashnew-light
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slashnew-dark
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/codess-aus
+  generator: false
+
+copyright: Copyright &copy; 2026 @Codess-Aus — SlashNew Conf
+
+nav:
+  - Home: index.md
+  - Chapters:
+      - "00 · Welcome to SlashNew": chapters/00-welcome.md
+      - "01 · The Agenda": chapters/01-agenda.md
+      - "02 · Rule Zero": chapters/02-rulezero.md
+      - "03 · The Right Way": chapters/03-therightway.md
+      - "04 · Earning Trust": chapters/04-trust.md
+      - "05 · The Moment": chapters/05-themoment.md
+      - "06 · It's a Feature, Not a Bug": chapters/06-feature.md
+      - "07 · Human in the Loop": chapters/07-hitl.md
+      - "08 · Amplify, Don't Replace": chapters/08-amplify.md
+      - "09 · Meaningful Oversight": chapters/09-oversight.md
+      - "10 · Decision Making with AI": chapters/10-dm.md
+      - "11 · Principles That Hold": chapters/11-principles.md
+      - "12 · Explainability": chapters/12-explainability.md
+      - "13 · Reliability & Safety": chapters/13-reliability.md
+      - "14 · Inclusivity by Design": chapters/14-inclusivity.md
+      - "15 · Real-World Stories": chapters/15-realworld.md
+      - "16 · The Three Waves": chapters/16-3waves.md
+      - "17 · Governance": chapters/17-governance.md
+      - "18 · Leading with Empathy": chapters/18-empathy.md
+      - "19 · Take Action": chapters/19-actions.md
+      - "20 · Resources": chapters/20-resources.md
+      - "21 · Closing — Trust, Again": chapters/21-trust.md

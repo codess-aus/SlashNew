@@ -1,0 +1,442 @@
+/* =========================================================
+   Scaling Guacamole — SlashNew Conf 2026
+   Theme: deep purple/black with pure white text in dark mode
+   and pure black text on white in light mode. NO GREY.
+   ========================================================= */
+
+/* ---- Fonts: Mona Sans (preferred), fall back to Calibri ---- */
+@font-face {
+  font-family: "Mona Sans";
+  src: url("https://github.com/mona-sans/raw/main/fonts/variable/Mona-Sans.var.woff2")
+    format("woff2-variations");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --sn-font: "Mona Sans", Calibri, "Segoe UI", system-ui, -apple-system,
+    "Helvetica Neue", Arial, sans-serif;
+
+  /* Brand palette pulled from the conference artwork */
+  --sn-purple: #8b7fd6;
+  --sn-purple-bright: #a78bfa;
+  --sn-purple-deep: #5b4fb8;
+  --sn-pink: #d96bb8;
+  --sn-bg-dark: #0b0b12;
+  --sn-surface-dark: #14141d;
+  --sn-bg-light: #ffffff;
+  --sn-surface-light: #faf8ff;
+}
+
+/* =========================================================
+   Custom palettes (mapped from mkdocs.yml: slashnew-light / -dark)
+   ========================================================= */
+
+[data-md-color-scheme="slashnew-dark"] {
+  --md-default-bg-color: var(--sn-bg-dark);
+  --md-default-bg-color--light: var(--sn-bg-dark);
+  --md-default-bg-color--lighter: var(--sn-surface-dark);
+  --md-default-bg-color--lightest: var(--sn-surface-dark);
+
+  /* Body text: PURE WHITE — never grey */
+  --md-default-fg-color: #ffffff;
+  --md-default-fg-color--light: #ffffff;
+  --md-default-fg-color--lighter: #ffffff;
+  --md-default-fg-color--lightest: #ffffff;
+  --md-typeset-color: #ffffff;
+  --md-typeset-a-color: var(--sn-purple-bright);
+
+  --md-primary-fg-color: var(--sn-purple-deep);
+  --md-primary-fg-color--light: var(--sn-purple);
+  --md-primary-fg-color--dark: #1a1230;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffff;
+
+  --md-accent-fg-color: var(--sn-purple-bright);
+  --md-accent-fg-color--transparent: rgba(167, 139, 250, 0.15);
+  --md-accent-bg-color: #ffffff;
+
+  --md-code-bg-color: #1a1a26;
+  --md-code-fg-color: #ffffff;
+
+  --md-footer-bg-color: #08080f;
+  --md-footer-bg-color--dark: #050509;
+  --md-footer-fg-color: #ffffff;
+  --md-footer-fg-color--light: #ffffff;
+  --md-footer-fg-color--lighter: #ffffff;
+}
+
+[data-md-color-scheme="slashnew-light"] {
+  --md-default-bg-color: var(--sn-bg-light);
+  --md-default-bg-color--light: var(--sn-bg-light);
+  --md-default-bg-color--lighter: var(--sn-surface-light);
+  --md-default-bg-color--lightest: var(--sn-surface-light);
+
+  /* Body text: PURE BLACK — never grey */
+  --md-default-fg-color: #000000;
+  --md-default-fg-color--light: #000000;
+  --md-default-fg-color--lighter: #000000;
+  --md-default-fg-color--lightest: #000000;
+  --md-typeset-color: #000000;
+  --md-typeset-a-color: var(--sn-purple-deep);
+
+  --md-primary-fg-color: var(--sn-purple-deep);
+  --md-primary-fg-color--light: var(--sn-purple);
+  --md-primary-fg-color--dark: #2a1f6e;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffff;
+
+  --md-accent-fg-color: var(--sn-purple-deep);
+  --md-accent-fg-color--transparent: rgba(91, 79, 184, 0.12);
+  --md-accent-bg-color: #ffffff;
+
+  --md-code-bg-color: #f3eeff;
+  --md-code-fg-color: #000000;
+
+  --md-footer-bg-color: #1a1230;
+  --md-footer-bg-color--dark: #0e0820;
+  --md-footer-fg-color: #ffffff;
+  --md-footer-fg-color--light: #ffffff;
+  --md-footer-fg-color--lighter: #ffffff;
+}
+
+/* =========================================================
+   Global typography
+   ========================================================= */
+body,
+.md-typeset,
+.md-header,
+.md-tabs,
+.md-nav,
+.md-footer {
+  font-family: var(--sn-font) !important;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: var(--sn-font) !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* H1 / H2 use the brand purple in BOTH modes — readable on white & black */
+.md-typeset h1 {
+  color: var(--sn-purple-bright);
+}
+[data-md-color-scheme="slashnew-light"] .md-typeset h1 {
+  color: var(--sn-purple-deep);
+}
+
+.md-typeset h2 {
+  color: var(--sn-purple-bright);
+  margin-top: 2.4rem;
+}
+[data-md-color-scheme="slashnew-light"] .md-typeset h2 {
+  color: var(--sn-purple-deep);
+}
+
+/* H3+ stays pure white/black for max contrast */
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6,
+.md-typeset p,
+.md-typeset li,
+.md-typeset blockquote,
+.md-typeset td,
+.md-typeset th,
+.md-typeset figcaption {
+  color: var(--md-typeset-color) !important;
+}
+
+/* Kill the "muted/grey" metadata text Material uses */
+.md-typeset .md-source-file,
+.md-source__repository,
+.md-typeset small,
+.md-meta,
+.md-typeset .md-meta__item,
+.md-typeset .headerlink {
+  color: var(--md-typeset-color) !important;
+  opacity: 1 !important;
+}
+
+/* Header bar */
+.md-header {
+  background: linear-gradient(
+    100deg,
+    #1a1230 0%,
+    var(--sn-purple-deep) 50%,
+    var(--sn-pink) 130%
+  );
+  color: #ffffff;
+}
+.md-header__title,
+.md-header__topic,
+.md-header a {
+  color: #ffffff !important;
+}
+
+/* Search */
+.md-search__input {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+.md-search__input::placeholder {
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+/* Footer */
+.md-footer,
+.md-footer-meta {
+  color: #ffffff !important;
+}
+.md-footer a,
+.md-footer-meta a {
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   Hero banner used at top of each chapter page
+   ========================================================= */
+.sn-hero {
+  position: relative;
+  margin: -1.5rem -1.5rem 2rem -1.5rem;
+  padding: 2.4rem 1.5rem 3rem 1.5rem;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(167, 139, 250, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(217, 107, 184, 0.25),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #1a1230 0%, #0b0b12 100%);
+  text-align: center;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+[data-md-color-scheme="slashnew-light"] .sn-hero {
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(167, 139, 250, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(217, 107, 184, 0.25),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #2a1f6e 0%, #5b4fb8 100%);
+  color: #ffffff;
+}
+
+.sn-hero a.sn-back {
+  display: inline-block;
+  color: #ffffff !important;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.sn-hero a.sn-back:hover {
+  text-decoration: underline;
+}
+
+.sn-hero img {
+  display: block;
+  margin: 0 auto;
+  max-width: min(720px, 100%);
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(167, 139, 250, 0.25);
+}
+
+.sn-hero .sn-date {
+  margin-top: 1.4rem;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+/* =========================================================
+   Landing page — banner + chapter grid
+   ========================================================= */
+.sn-landing {
+  margin: -1.5rem -1.5rem 2rem -1.5rem;
+  padding: 3rem 1.5rem 4rem 1.5rem;
+  text-align: center;
+  background: radial-gradient(
+      circle at 15% 30%,
+      rgba(167, 139, 250, 0.45),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 85% 40%,
+      rgba(217, 107, 184, 0.35),
+      transparent 55%
+    ),
+    linear-gradient(180deg, #1a1230 0%, #0b0b12 100%);
+  border-bottom: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+[data-md-color-scheme="slashnew-light"] .sn-landing {
+  background: radial-gradient(
+      circle at 15% 30%,
+      rgba(167, 139, 250, 0.55),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 85% 40%,
+      rgba(217, 107, 184, 0.5),
+      transparent 55%
+    ),
+    linear-gradient(180deg, #2a1f6e 0%, #5b4fb8 100%);
+}
+
+.sn-landing h1 {
+  font-size: 2.6rem;
+  color: #ffffff !important;
+  margin: 0.4rem 0 0.6rem 0;
+  letter-spacing: -0.02em;
+}
+.sn-landing p.sn-sub {
+  color: #ffffff !important;
+  font-size: 1.05rem;
+  margin: 0 auto 1.6rem auto;
+  max-width: 640px;
+  opacity: 1;
+}
+.sn-landing .sn-pill {
+  display: inline-block;
+  padding: 0.55rem 1.2rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.sn-landing .sn-pill:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Grid of chapters */
+.sn-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.4rem;
+  margin: 2rem 0 3rem 0;
+}
+
+.sn-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--sn-surface-dark);
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none !important;
+  color: var(--md-typeset-color) !important;
+  border: 1px solid rgba(167, 139, 250, 0.18);
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+[data-md-color-scheme="slashnew-light"] .sn-card {
+  background: #ffffff;
+  border: 1px solid rgba(91, 79, 184, 0.25);
+  box-shadow: 0 2px 14px rgba(91, 79, 184, 0.08);
+}
+
+.sn-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--sn-purple-bright);
+  box-shadow: 0 14px 40px rgba(91, 79, 184, 0.35);
+}
+
+.sn-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.18);
+}
+
+.sn-card .sn-card-body {
+  padding: 1.1rem 1.2rem 1.4rem 1.2rem;
+}
+
+.sn-card .sn-date {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--md-typeset-color) !important;
+  opacity: 1;
+  margin-bottom: 0.55rem;
+}
+
+.sn-card h3 {
+  font-family: var(--sn-font) !important;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  margin: 0 0 0.6rem 0;
+  color: var(--md-typeset-color) !important;
+  font-weight: 700;
+}
+
+.sn-card p {
+  font-size: 0.92rem;
+  margin: 0 0 0.9rem 0;
+  color: var(--md-typeset-color) !important;
+}
+
+.sn-card .sn-read {
+  font-weight: 600;
+  color: var(--sn-purple-bright) !important;
+}
+[data-md-color-scheme="slashnew-light"] .sn-card .sn-read {
+  color: var(--sn-purple-deep) !important;
+}
+
+/* =========================================================
+   Code blocks — ensure no grey text
+   ========================================================= */
+.md-typeset code,
+.md-typeset pre {
+  color: var(--md-code-fg-color) !important;
+}
+
+/* =========================================================
+   Responsive tweaks
+   ========================================================= */
+@media (max-width: 600px) {
+  .sn-landing h1 {
+    font-size: 1.8rem;
+  }
+  .sn-card img {
+    height: 170px;
+  }
+  .sn-hero {
+    padding: 1.6rem 1rem 2rem 1rem;
+  }
+}
+
+/* =========================================================
+   Accessibility — visible focus ring
+   ========================================================= */
+a:focus-visible,
+button:focus-visible,
+.sn-card:focus-visible,
+.md-nav__link:focus-visible {
+  outline: 3px solid var(--sn-purple-bright);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
