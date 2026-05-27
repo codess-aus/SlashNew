@@ -204,26 +204,22 @@ body,
   position: relative;
   margin: -1.5rem -1.5rem 2rem -1.5rem;
   padding: 2.4rem 1.5rem 3rem 1.5rem;
-  background: #0b0b0b;
+  background: var(--sn-green-bright);
   text-align: center;
-  border-top: 1px solid var(--sn-green-bright);
-  border-bottom: 1px solid var(--sn-green-bright);
-  color: #ffffff;
+  color: #000000;
 }
 
-/* Same flat-dark treatment in light mode — the slide deck is dark,
-   so the hero stays dark to showcase the #92D050 accent cleanly. */
 [data-md-color-scheme="slashnew-light"] .sn-hero {
-  background: #0b0b0b;
-  color: #ffffff;
+  background: var(--sn-green-bright);
+  color: #000000;
 }
 
 .sn-hero a.sn-back {
   display: inline-block;
-  color: #ffffff !important;
+  color: #000000 !important;
   text-decoration: none;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .sn-hero a.sn-back:hover {
   text-decoration: underline;
@@ -247,7 +243,7 @@ body,
   font-size: 0.78rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ffffff !important;
+  color: #000000 !important;
   opacity: 1;
 }
 
@@ -260,25 +256,23 @@ body,
   margin: -1.5rem -1.5rem 2.4rem -1.5rem;
   padding: 4.5rem 1.5rem 4.5rem 1.5rem;
   text-align: center;
-  background: #0b0b0b;
-  border-top: 1px solid var(--sn-green-bright);
-  border-bottom: 1px solid var(--sn-green-bright);
-  color: #ffffff;
+  background: var(--sn-green-bright);
+  color: #000000;
 }
 
 [data-md-color-scheme="slashnew-light"] .sn-landing {
-  background: #0b0b0b;
-  color: #ffffff;
+  background: var(--sn-green-bright);
+  color: #000000;
 }
 
-/* Short lime underline accent under the landing title (matches slide style). */
+/* Short black underline accent under the landing title (matches slide style). */
 .sn-landing h1::after {
   content: "";
   display: block;
   width: 80px;
   height: 4px;
   margin: 1.1rem auto 0 auto;
-  background: var(--sn-green-bright);
+  background: #000000;
   border-radius: 2px;
 }
 
@@ -287,13 +281,13 @@ body,
   font-size: clamp(2.2rem, 5vw, 3.4rem);
   line-height: 1.1;
   font-weight: 800;
-  color: #ffffff !important;
+  color: #000000 !important;
   margin: 0 auto 0.8rem auto;
   max-width: 18ch;
   letter-spacing: -0.02em;
 }
 .sn-landing p.sn-sub {
-  color: #ffffff !important;
+  color: #000000 !important;
   font-size: 1.05rem;
   margin: 0 auto 1.8rem auto;
   max-width: 640px;
@@ -303,17 +297,17 @@ body,
   display: inline-block;
   padding: 0.7rem 1.6rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.10);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: #000000;
+  border: 2px solid #000000;
   color: #ffffff !important;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
-  transition: background 0.18s ease, border-color 0.18s ease;
+  transition: background 0.18s ease, color 0.18s ease;
 }
 .sn-landing .sn-pill:hover {
-  background: rgba(255, 255, 255, 0.22);
-  border-color: #ffffff;
+  background: #ffffff;
+  color: #000000 !important;
 }
 
 /* Grid of chapters: 3 columns on desktop, responsive down to 1 */
