@@ -11,7 +11,7 @@ A 22-chapter responsible / agentic AI talk by **@Codess-Aus**, published as a st
 - Mona Sans (web font), falling back to Calibri
 - Built-in light / dark toggle in the header
 - Responsive grid landing page, hero-image-per-chapter detail pages
-- One chapter per image in [assets/](assets/) — 22 in total
+- One chapter per image in [docs/assets/](docs/assets/) — 22 in total
 
 ## Local development
 
