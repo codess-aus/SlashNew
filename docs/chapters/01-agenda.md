@@ -5,11 +5,11 @@ description: "A roadmap through trust, oversight, governance and the three waves
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/1-agenda.png" alt="Hero illustration for chapter 01 — The Agenda">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Opening</div>
 
 </div>
 

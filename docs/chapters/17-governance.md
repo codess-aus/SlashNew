@@ -5,11 +5,11 @@ description: "How to do AI governance without becoming the team everyone routes 
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/17-governance.png" alt="Hero illustration for chapter 17 — Governance">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Leadership</div>
 
 </div>
 

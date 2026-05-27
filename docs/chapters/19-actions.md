@@ -5,11 +5,11 @@ description: "Five concrete things to do on Monday. No theory. Just the next mov
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/19-actions.png" alt="Hero illustration for chapter 19 — Take Action">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Closing</div>
 
 </div>
 

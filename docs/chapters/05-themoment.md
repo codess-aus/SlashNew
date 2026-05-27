@@ -5,11 +5,11 @@ description: "We're inside the inflection. Why "general-purpose reasoning in the
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/5-themoment.png" alt="Hero illustration for chapter 05 — The Moment">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Context</div>
 
 </div>
 

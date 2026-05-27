@@ -5,11 +5,11 @@ description: "Microsoft Learn paths, GitHub docs, books and tools — the curate
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/20-resources.png" alt="Hero illustration for chapter 20 — Resources">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Closing</div>
 
 </div>
 

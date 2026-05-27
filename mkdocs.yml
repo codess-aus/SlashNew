@@ -1,5 +1,5 @@
-site_name: Scaling Guacamole
-site_description: Responsible Agentic AI — a SlashNew Conf 2026 talk by @Codess-Aus
+site_name: Humans at the Heart
+site_description: Humans at the Heart — a SlashNew Conf 2026 talk on responsible, agentic AI by @Codess-Aus
 site_author: "@Codess-Aus"
 site_url: https://codess-aus.github.io/SlashNew/
 repo_url: https://github.com/codess-aus/SlashNew
@@ -70,7 +70,7 @@ extra:
       link: https://github.com/codess-aus
   generator: false
 
-copyright: Copyright &copy; 2026 @Codess-Aus — SlashNew Conf
+copyright: Copyright &copy; 2026 @Codess-Aus — Humans at the Heart · SlashNew Conf
 
 nav:
   - Home: index.md

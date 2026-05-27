@@ -5,11 +5,11 @@ description: "Evals, red teaming, regression budgets — reliability as a first-
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/13-reliability.png" alt="Hero illustration for chapter 13 — Reliability & Safety">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Framework</div>
 
 </div>
 

@@ -5,11 +5,11 @@ description: "We end where we started. Trust isn't a slide at the end of the dec
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/21-trust.png" alt="Hero illustration for chapter 21 — Closing — Trust, Again">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Closing</div>
 
 </div>
 

@@ -5,11 +5,11 @@ description: "Hallucinations, uncertainty, refusal — sometimes they're the pro
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/6-feature.png" alt="Hero illustration for chapter 06 — It's a Feature, Not a Bug">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Mindset</div>
 
 </div>
 

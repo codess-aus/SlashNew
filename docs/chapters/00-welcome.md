@@ -5,11 +5,11 @@ description: "Why we're here, who this talk is for, and the one question we keep
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/0-title.png" alt="Hero illustration for chapter 00 — Welcome to SlashNew">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Opening</div>
 
 </div>
 

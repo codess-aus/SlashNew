@@ -5,11 +5,11 @@ description: "Your team is anxious about AI. That's data. How leaders turn fear 
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/18-empathy.png" alt="Hero illustration for chapter 18 — Leading with Empathy">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Leadership</div>
 
 </div>
 

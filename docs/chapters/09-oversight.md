@@ -5,11 +5,11 @@ description: "Approval buttons aren't oversight. What real, decision-grade human
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/9-oversight.png" alt="Hero illustration for chapter 09 — Meaningful Oversight">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Practice</div>
 
 </div>
 

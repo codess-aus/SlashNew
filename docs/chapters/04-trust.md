@@ -5,11 +5,11 @@ description: "Trust isn't a feature you toggle on. It's a UX, a process and a co
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/4-trust.png" alt="Hero illustration for chapter 04 — Earning Trust">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Foundation</div>
 
 </div>
 

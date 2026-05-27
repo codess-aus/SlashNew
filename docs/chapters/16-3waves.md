@@ -5,11 +5,11 @@ description: "From autocomplete, to chat, to agents. Where you sit on the wave c
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/16-3waves.png" alt="Hero illustration for chapter 16 — The Three Waves">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Context</div>
 
 </div>
 

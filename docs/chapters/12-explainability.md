@@ -5,11 +5,11 @@ description: ""Because the model said so" is not an answer. Designing systems th
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/12-explainability.png" alt="Hero illustration for chapter 12 — Explainability">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Framework</div>
 
 </div>
 

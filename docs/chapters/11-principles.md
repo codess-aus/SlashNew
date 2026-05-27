@@ -5,11 +5,11 @@ description: "The six Microsoft Responsible AI principles, and how they translat
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/11-principles.png" alt="Hero illustration for chapter 11 — Principles That Hold">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Framework</div>
 
 </div>
 

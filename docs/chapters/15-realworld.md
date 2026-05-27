@@ -5,11 +5,11 @@ description: "Three short case studies — what worked, what broke, and what we 
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/15-realworld.png" alt="Hero illustration for chapter 15 — Real-World Stories">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Stories</div>
 
 </div>
 

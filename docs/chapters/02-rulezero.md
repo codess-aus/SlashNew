@@ -5,11 +5,11 @@ description: "Before you ship anything else, ship trust. The rule that frames ev
 
 <div class="sn-hero" markdown>
 
-<a class="sn-back" href="../../">← Back to Blog</a>
+<a class="sn-back" href="../../">← Back</a>
 
 <img src="../../assets/2-rulezero.png" alt="Hero illustration for chapter 02 — Rule Zero">
 
-<div class="sn-date">February 16, 2026</div>
+<div class="sn-cat">Foundation</div>
 
 </div>
 

@@ -10,12 +10,12 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "chapters"
 OUT.mkdir(parents=True, exist_ok=True)
 
-DATE = "February 16, 2026"
+DATE = "February 16, 2026"  # kept for reference; not rendered on chapter pages
 
+# (slug, image, number, title, category, lede, body_markdown)
 CHAPTERS = [
-    # (slug, image, number, title, lede, body_markdown)
     (
-        "00-welcome", "0-title.png", "00", "Welcome to SlashNew",
+        "00-welcome", "0-title.png", "00", "Welcome to SlashNew", "Opening",
         "Why we're here, who this talk is for, and the one question we keep coming back to.",
         """
 ## Hello, SlashNew
@@ -40,7 +40,7 @@ That's it. That's the whole talk. The next 21 chapters are just different ways o
 """,
     ),
     (
-        "01-agenda", "1-agenda.png", "01", "The Agenda",
+        "01-agenda", "1-agenda.png", "01", "The Agenda", "Opening",
         "A roadmap through trust, oversight, governance and the three waves of AI that brought us here.",
         """
 ## What we'll cover
@@ -61,7 +61,7 @@ Each chapter is short on purpose. You should be able to skim the whole thing in 
 """,
     ),
     (
-        "02-rulezero", "2-rulezero.png", "02", "Rule Zero",
+        "02-rulezero", "2-rulezero.png", "02", "Rule Zero", "Foundation",
         "Before you ship anything else, ship trust. The rule that frames every decision after it.",
         """
 ## Rule Zero
@@ -88,7 +88,7 @@ If you can answer those three crisply, you're probably on the right side of Rule
 """,
     ),
     (
-        "03-therightway", "3-therightway.png", "03", "The Right Way",
+        "03-therightway", "3-therightway.png", "03", "The Right Way", "Foundation",
         "Microsoft's Responsible AI Standard, in plain English. What it actually asks of you on a Tuesday.",
         """
 ## The Standard, decoded
@@ -123,7 +123,7 @@ Those three artefacts will get you 80% of the value of the Standard, today.
 """,
     ),
     (
-        "04-trust", "4-trust.png", "04", "Earning Trust",
+        "04-trust", "4-trust.png", "04", "Earning Trust", "Foundation",
         "Trust isn't a feature you toggle on. It's a UX, a process and a contract.",
         """
 ## Trust is a UX problem
@@ -161,7 +161,7 @@ That loop is why people trust agent mode. Take any of those steps out and trust 
 """,
     ),
     (
-        "05-themoment", "5-themoment.png", "05", "The Moment",
+        "05-themoment", "5-themoment.png", "05", "The Moment", "Context",
         "We're inside the inflection. Why \"general-purpose reasoning in the IDE\" changes the shape of every team.",
         """
 ## This is the moment
@@ -189,7 +189,7 @@ The moment is real. The fundamentals are the same.
 """,
     ),
     (
-        "06-feature", "6-feature.png", "06", "It's a Feature, Not a Bug",
+        "06-feature", "6-feature.png", "06", "It's a Feature, Not a Bug", "Mindset",
         "Hallucinations, uncertainty, refusal — sometimes they're the product working.",
         """
 ## Reframing the "bug" list
@@ -220,7 +220,7 @@ The features we used to call bugs are the surface area you build trust on top of
 """,
     ),
     (
-        "07-hitl", "7-hitl.png", "07", "Human in the Loop",
+        "07-hitl", "7-hitl.png", "07", "Human in the Loop", "Practice",
         "HITL done well is empowering, not theatre. A practical pattern catalogue.",
         """
 ## HITL is not a checkbox
@@ -253,7 +253,7 @@ Pick the pattern that matches the **blast radius** of the decision, not the conv
 """,
     ),
     (
-        "08-amplify", "8-amplify.png", "08", "Amplify, Don't Replace",
+        "08-amplify", "8-amplify.png", "08", "Amplify, Don't Replace", "Mindset",
         "The teams winning with Copilot aren't replacing engineers. They're amplifying judgment.",
         """
 ## The replacement framing is wrong
@@ -286,7 +286,7 @@ The answer is your governance model.
 """,
     ),
     (
-        "09-oversight", "9-oversight.png", "09", "Meaningful Oversight",
+        "09-oversight", "9-oversight.png", "09", "Meaningful Oversight", "Practice",
         "Approval buttons aren't oversight. What real, decision-grade human review looks like.",
         """
 ## Oversight ≠ approval UI
@@ -316,7 +316,7 @@ GitHub gives you most of this for free: pull requests, required reviewers, branc
 """,
     ),
     (
-        "10-dm", "10-dm.png", "10", "Decision Making with AI",
+        "10-dm", "10-dm.png", "10", "Decision Making with AI", "Practice",
         "How to use models for decisions that matter — without outsourcing accountability with them.",
         """
 ## Decisions vs. drafts
@@ -348,7 +348,7 @@ If you can't tick those five, you are not making a decision — you are *delegat
 """,
     ),
     (
-        "11-principles", "11-principles.png", "11", "Principles That Hold",
+        "11-principles", "11-principles.png", "11", "Principles That Hold", "Framework",
         "The six Microsoft Responsible AI principles, and how they translate into engineering behaviour.",
         """
 ## The six, briefly
@@ -383,7 +383,7 @@ If the honest answer is "a slide deck," you have a gap. If the answer is "a CI j
 """,
     ),
     (
-        "12-explainability", "12-explainability.png", "12", "Explainability",
+        "12-explainability", "12-explainability.png", "12", "Explainability", "Framework",
         "\"Because the model said so\" is not an answer. Designing systems that can tell you why.",
         """
 ## Explanation is a product surface
@@ -413,7 +413,7 @@ Most products only ship layer 1. The trust gap is layers 2 and 3.
 """,
     ),
     (
-        "13-reliability", "13-reliability.png", "13", "Reliability & Safety",
+        "13-reliability", "13-reliability.png", "13", "Reliability & Safety", "Framework",
         "Evals, red teaming, regression budgets — reliability as a first-class engineering metric.",
         """
 ## Reliability is the unsexy superpower
@@ -444,7 +444,7 @@ Treat safety the way you treat security: as architecture, not vibes.
 """,
     ),
     (
-        "14-inclusivity", "14-inclusivity.png", "14", "Inclusivity by Design",
+        "14-inclusivity", "14-inclusivity.png", "14", "Inclusivity by Design", "Framework",
         "If it doesn't work for everyone, it doesn't work. Practical inclusivity for agentic products.",
         """
 ## Inclusivity is a quality metric
@@ -469,7 +469,7 @@ Agentic AI is genuinely amazing for accessibility — voice interfaces, summariz
 """,
     ),
     (
-        "15-realworld", "15-realworld.png", "15", "Real-World Stories",
+        "15-realworld", "15-realworld.png", "15", "Real-World Stories", "Stories",
         "Three short case studies — what worked, what broke, and what we learned.",
         """
 ## Story 1 — The triage agent that worked
@@ -494,7 +494,7 @@ The eval suite caught it on the next run, with a regression on the "hedging" axi
 """,
     ),
     (
-        "16-3waves", "16-3waves.png", "16", "The Three Waves",
+        "16-3waves", "16-3waves.png", "16", "The Three Waves", "Context",
         "From autocomplete, to chat, to agents. Where you sit on the wave changes what \"good\" looks like.",
         """
 ## Three waves, three mindsets
@@ -526,7 +526,7 @@ If your team is in Wave 3 with Wave 1 governance, you will have a bad week. Buil
 """,
     ),
     (
-        "17-governance", "17-governance.png", "17", "Governance",
+        "17-governance", "17-governance.png", "17", "Governance", "Leadership",
         "How to do AI governance without becoming the team everyone routes around.",
         """
 ## The two failure modes
@@ -559,7 +559,7 @@ When the paved road is the safest road, governance is just "use the paved road."
 """,
     ),
     (
-        "18-empathy", "18-empathy.png", "18", "Leading with Empathy",
+        "18-empathy", "18-empathy.png", "18", "Leading with Empathy", "Leadership",
         "Your team is anxious about AI. That's data. How leaders turn fear into capability.",
         """
 ## The fear is rational
@@ -588,7 +588,7 @@ The ritual normalizes both wins and losses. It turns AI from a scary outside for
 """,
     ),
     (
-        "19-actions", "19-actions.png", "19", "Take Action",
+        "19-actions", "19-actions.png", "19", "Take Action", "Closing",
         "Five concrete things to do on Monday. No theory. Just the next move.",
         """
 ## Monday morning, five things
@@ -621,7 +621,7 @@ You don't need to boil the ocean. You need to ship the next thing **responsibly*
 """,
     ),
     (
-        "20-resources", "20-resources.png", "20", "Resources",
+        "20-resources", "20-resources.png", "20", "Resources", "Closing",
         "Microsoft Learn paths, GitHub docs, books and tools — the curated reading list behind the talk.",
         """
 ## Microsoft Learn
@@ -658,7 +658,7 @@ You don't need to boil the ocean. You need to ship the next thing **responsibly*
 """,
     ),
     (
-        "21-trust", "21-trust.png", "21", "Closing — Trust, Again",
+        "21-trust", "21-trust.png", "21", "Closing — Trust, Again", "Closing",
         "We end where we started. Trust isn't a slide at the end of the deck. It's the whole product.",
         """
 ## Back to the beginning
@@ -696,7 +696,7 @@ I'm **@Codess-Aus**. Come find me. Let's keep building.
 ]
 
 
-def render(slug, image, number, title, lede, body):
+def render(slug, image, number, title, category, lede, body):
     hero = textwrap.dedent(f"""\
     ---
     title: "{number} · {title}"
@@ -705,11 +705,11 @@ def render(slug, image, number, title, lede, body):
 
     <div class="sn-hero" markdown>
 
-    <a class="sn-back" href="../../">← Back to Blog</a>
+    <a class="sn-back" href="../../">← Back</a>
 
     <img src="../../assets/{image}" alt="Hero illustration for chapter {number} — {title}">
 
-    <div class="sn-date">{DATE}</div>
+    <div class="sn-cat">{category}</div>
 
     </div>
 
@@ -722,9 +722,9 @@ def render(slug, image, number, title, lede, body):
 
 def main():
     for ch in CHAPTERS:
-        slug, image, number, title, lede, body = ch
+        slug, image, number, title, category, lede, body = ch
         path = OUT / f"{slug}.md"
-        path.write_text(render(slug, image, number, title, lede, body), encoding="utf-8")
+        path.write_text(render(slug, image, number, title, category, lede, body), encoding="utf-8")
         print(f"wrote {path.relative_to(ROOT)}")
 
 
