@@ -7,7 +7,7 @@ description: "The six Microsoft Responsible AI principles, and how they translat
 
 <a class="sn-back" href="../../">← Back</a>
 
-<img src="../../assets/11-principles.png" alt="Hero illustration for chapter 11 — Principles That Hold">
+<img src="../../assets/11-principles.png" alt="Hero illustration for chapter 11, Principles That Hold">
 
 <div class="sn-cat">Framework</div>
 
@@ -20,12 +20,12 @@ description: "The six Microsoft Responsible AI principles, and how they translat
 
 Microsoft's Responsible AI principles are:
 
-1. **Fairness** — treat people equitably.
-2. **Reliability & Safety** — perform as intended, safely.
-3. **Privacy & Security** — protect data and systems.
-4. **Inclusiveness** — work for the full range of human experience.
-5. **Transparency** — be understandable.
-6. **Accountability** — humans remain responsible.
+1. **Fairness**, treat people equitably.
+2. **Reliability & Safety**, perform as intended, safely.
+3. **Privacy & Security**, protect data and systems.
+4. **Inclusiveness**, work for the full range of human experience.
+5. **Transparency**, be understandable.
+6. **Accountability**, humans remain responsible.
 
 They sound abstract. They aren't. Each one maps to engineering behaviour you already know how to do.
 

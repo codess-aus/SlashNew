@@ -7,7 +7,7 @@ description: "Before you ship anything else, ship trust. The rule that frames ev
 
 <a class="sn-back" href="../../">← Back</a>
 
-<img src="../../assets/2-rulezero.png" alt="Hero illustration for chapter 02 — Rule Zero">
+<img src="../../assets/2-rulezero.png" alt="Hero illustration for chapter 02, Rule Zero">
 
 <div class="sn-cat">Foundation</div>
 
@@ -20,11 +20,11 @@ description: "Before you ship anything else, ship trust. The rule that frames ev
 
 > **Don't ship AI you wouldn't be comfortable being on the receiving end of.**
 
-That's it. Everything else in this talk — the principles, the eval suites, the governance boards — is just engineering against that one rule.
+That's it. Everything else in this talk, the principles, the eval suites, the governance boards, is just engineering against that one rule.
 
 ## Why we need a rule above the rules
 
-Standards are great. The [Microsoft Responsible AI Standard](https://www.microsoft.com/ai/responsible-ai), the NIST AI Risk Management Framework, the EU AI Act — they're all genuinely useful. But standards describe the floor. Rule Zero describes the **posture**.
+Standards are great. The [Microsoft Responsible AI Standard](https://www.microsoft.com/ai/responsible-ai), the NIST AI Risk Management Framework, the EU AI Act, they're all genuinely useful. But standards describe the floor. Rule Zero describes the **posture**.
 
 You can comply with every standard on earth and still ship something gross. We've all seen it. The model card was fine. The DPIA was filed. And the product still made someone's day worse.
 

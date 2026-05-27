@@ -7,7 +7,7 @@ description: "Microsoft's Responsible AI Standard, in plain English. What it act
 
 <a class="sn-back" href="../../">← Back</a>
 
-<img src="../../assets/3-therightway.png" alt="Hero illustration for chapter 03 — The Right Way">
+<img src="../../assets/3-therightway.png" alt="Hero illustration for chapter 03, The Right Way">
 
 <div class="sn-cat">Foundation</div>
 
@@ -44,4 +44,4 @@ Those three artefacts will get you 80% of the value of the Standard, today.
 ## Further reading
 
 - [Microsoft Responsible AI Standard v2](https://www.microsoft.com/ai/responsible-ai)
-- [Microsoft Learn — Responsible AI principles](https://learn.microsoft.com/training/modules/responsible-ai-principles/)
+- [Microsoft Learn, Responsible AI principles](https://learn.microsoft.com/training/modules/responsible-ai-principles/)

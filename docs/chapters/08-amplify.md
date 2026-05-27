@@ -7,7 +7,7 @@ description: "The teams winning with Copilot aren't replacing engineers. They're
 
 <a class="sn-back" href="../../">← Back</a>
 
-<img src="../../assets/8-amplify.png" alt="Hero illustration for chapter 08 — Amplify, Don't Replace">
+<img src="../../assets/8-amplify.png" alt="Hero illustration for chapter 08, Amplify, Don't Replace">
 
 <div class="sn-cat">Mindset</div>
 
@@ -20,7 +20,7 @@ description: "The teams winning with Copilot aren't replacing engineers. They're
 
 Every few weeks someone publishes a "X% of engineering jobs will be automated" piece. They are mostly wrong, and they are mostly wrong in the same way: they confuse **tasks** with **jobs**.
 
-Yes, a lot of tasks I used to do by hand — boilerplate, scaffolding, first-draft docs, glue code — are now one prompt away. That's good. None of that was the job.
+Yes, a lot of tasks I used to do by hand, boilerplate, scaffolding, first-draft docs, glue code, are now one prompt away. That's good. None of that was the job.
 
 The job was, and is:
 

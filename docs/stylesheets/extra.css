@@ -1,6 +1,6 @@
 /* =========================================================
-   Scaling Guacamole — SlashNew Conf 2026
-   Theme: deep purple/black with pure white text in dark mode
+   Humans at the Heart, SlashNew Conf 2026
+   Theme: deep green/black with pure white text in dark mode
    and pure black text on white in light mode. NO GREY.
    ========================================================= */
 
@@ -19,14 +19,14 @@
     "Helvetica Neue", Arial, sans-serif;
 
   /* Brand palette pulled from the conference artwork */
-  --sn-purple: #8b7fd6;
-  --sn-purple-bright: #a78bfa;
-  --sn-purple-deep: #5b4fb8;
-  --sn-pink: #d96bb8;
+  --sn-green: #6da832;
+  --sn-green-bright: #92D050;
+  --sn-green-deep: #3d7016;
+  --sn-pink: #3d7016;
   --sn-bg-dark: #0b0b12;
   --sn-surface-dark: #14141d;
   --sn-bg-light: #ffffff;
-  --sn-surface-light: #faf8ff;
+  --sn-surface-light: #f6fbef;
 }
 
 /* =========================================================
@@ -39,22 +39,22 @@
   --md-default-bg-color--lighter: var(--sn-surface-dark);
   --md-default-bg-color--lightest: var(--sn-surface-dark);
 
-  /* Body text: PURE WHITE — never grey */
+  /* Body text: PURE WHITE, never grey */
   --md-default-fg-color: #ffffff;
   --md-default-fg-color--light: #ffffff;
   --md-default-fg-color--lighter: #ffffff;
   --md-default-fg-color--lightest: #ffffff;
   --md-typeset-color: #ffffff;
-  --md-typeset-a-color: var(--sn-purple-bright);
+  --md-typeset-a-color: var(--sn-green-bright);
 
-  --md-primary-fg-color: var(--sn-purple-deep);
-  --md-primary-fg-color--light: var(--sn-purple);
-  --md-primary-fg-color--dark: #1a1230;
+  --md-primary-fg-color: var(--sn-green-deep);
+  --md-primary-fg-color--light: var(--sn-green);
+  --md-primary-fg-color--dark: #0a1505;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #ffffff;
 
-  --md-accent-fg-color: var(--sn-purple-bright);
-  --md-accent-fg-color--transparent: rgba(167, 139, 250, 0.15);
+  --md-accent-fg-color: var(--sn-green-bright);
+  --md-accent-fg-color--transparent: rgba(146, 208, 80, 0.15);
   --md-accent-bg-color: #ffffff;
 
   --md-code-bg-color: #1a1a26;
@@ -73,29 +73,29 @@
   --md-default-bg-color--lighter: var(--sn-surface-light);
   --md-default-bg-color--lightest: var(--sn-surface-light);
 
-  /* Body text: PURE BLACK — never grey */
+  /* Body text: PURE BLACK, never grey */
   --md-default-fg-color: #000000;
   --md-default-fg-color--light: #000000;
   --md-default-fg-color--lighter: #000000;
   --md-default-fg-color--lightest: #000000;
   --md-typeset-color: #000000;
-  --md-typeset-a-color: var(--sn-purple-deep);
+  --md-typeset-a-color: var(--sn-green-deep);
 
-  --md-primary-fg-color: var(--sn-purple-deep);
-  --md-primary-fg-color--light: var(--sn-purple);
-  --md-primary-fg-color--dark: #2a1f6e;
+  --md-primary-fg-color: var(--sn-green-deep);
+  --md-primary-fg-color--light: var(--sn-green);
+  --md-primary-fg-color--dark: #1a3608;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #ffffff;
 
-  --md-accent-fg-color: var(--sn-purple-deep);
-  --md-accent-fg-color--transparent: rgba(91, 79, 184, 0.12);
+  --md-accent-fg-color: var(--sn-green-deep);
+  --md-accent-fg-color--transparent: rgba(61, 112, 22, 0.12);
   --md-accent-bg-color: #ffffff;
 
-  --md-code-bg-color: #f3eeff;
+  --md-code-bg-color: #eef7e3;
   --md-code-fg-color: #000000;
 
-  --md-footer-bg-color: #1a1230;
-  --md-footer-bg-color--dark: #0e0820;
+  --md-footer-bg-color: #0a1505;
+  --md-footer-bg-color--dark: #070d04;
   --md-footer-fg-color: #ffffff;
   --md-footer-fg-color--light: #ffffff;
   --md-footer-fg-color--lighter: #ffffff;
@@ -122,20 +122,20 @@ body,
   letter-spacing: -0.01em;
 }
 
-/* H1 / H2 use the brand purple in BOTH modes — readable on white & black */
+/* H1 / H2 use the brand green in BOTH modes, AA contrast on white & black */
 .md-typeset h1 {
-  color: var(--sn-purple-bright);
+  color: var(--sn-green-bright);
 }
 [data-md-color-scheme="slashnew-light"] .md-typeset h1 {
-  color: var(--sn-purple-deep);
+  color: var(--sn-green-deep);
 }
 
 .md-typeset h2 {
-  color: var(--sn-purple-bright);
+  color: var(--sn-green-bright);
   margin-top: 2.4rem;
 }
 [data-md-color-scheme="slashnew-light"] .md-typeset h2 {
-  color: var(--sn-purple-deep);
+  color: var(--sn-green-deep);
 }
 
 /* H3+ stays pure white/black for max contrast */
@@ -167,8 +167,8 @@ body,
 .md-header {
   background: linear-gradient(
     100deg,
-    #1a1230 0%,
-    var(--sn-purple-deep) 50%,
+    #0a1505 0%,
+    var(--sn-green-deep) 50%,
     var(--sn-pink) 130%
   );
   color: #ffffff;
@@ -208,31 +208,31 @@ body,
   padding: 2.4rem 1.5rem 3rem 1.5rem;
   background: radial-gradient(
       circle at 20% 20%,
-      rgba(167, 139, 250, 0.35),
+      rgba(146, 208, 80, 0.35),
       transparent 60%
     ),
     radial-gradient(
       circle at 80% 30%,
-      rgba(217, 107, 184, 0.25),
+      rgba(61, 112, 22, 0.25),
       transparent 60%
     ),
-    linear-gradient(180deg, #1a1230 0%, #0b0b12 100%);
+    linear-gradient(180deg, #0a1505 0%, #0b0b12 100%);
   text-align: center;
-  border-bottom: 1px solid rgba(167, 139, 250, 0.3);
+  border-bottom: 1px solid rgba(146, 208, 80, 0.3);
 }
 
 [data-md-color-scheme="slashnew-light"] .sn-hero {
   background: radial-gradient(
       circle at 20% 20%,
-      rgba(167, 139, 250, 0.35),
+      rgba(146, 208, 80, 0.35),
       transparent 60%
     ),
     radial-gradient(
       circle at 80% 30%,
-      rgba(217, 107, 184, 0.25),
+      rgba(61, 112, 22, 0.25),
       transparent 60%
     ),
-    linear-gradient(180deg, #2a1f6e 0%, #5b4fb8 100%);
+    linear-gradient(180deg, #1a3608 0%, #3d7016 100%);
   color: #ffffff;
 }
 
@@ -255,7 +255,7 @@ body,
   height: auto;
   border-radius: 14px;
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55),
-    0 0 0 1px rgba(167, 139, 250, 0.25);
+    0 0 0 1px rgba(146, 208, 80, 0.25);
 }
 
 .sn-hero .sn-date,
@@ -270,7 +270,7 @@ body,
 }
 
 /* =========================================================
-   Landing page — subtle purple-glow hero + chapter grid
+   Landing page: subtle green-glow hero + chapter grid
    (Matches the reference "Ask Build Burn Less" layout.)
    ========================================================= */
 .sn-landing {
@@ -278,17 +278,17 @@ body,
   padding: 4.5rem 1.5rem 4.5rem 1.5rem;
   text-align: center;
   background:
-    radial-gradient(ellipse at 50% 40%, rgba(139, 127, 214, 0.45), transparent 65%),
-    radial-gradient(ellipse at 20% 10%, rgba(91, 79, 184, 0.35), transparent 60%),
-    linear-gradient(180deg, #14101f 0%, #0b0b12 100%);
-  border-bottom: 1px solid rgba(167, 139, 250, 0.18);
+    radial-gradient(ellipse at 50% 40%, rgba(109, 168, 50, 0.45), transparent 65%),
+    radial-gradient(ellipse at 20% 10%, rgba(61, 112, 22, 0.35), transparent 60%),
+    linear-gradient(180deg, #0a1505 0%, #0b0b12 100%);
+  border-bottom: 1px solid rgba(146, 208, 80, 0.18);
 }
 
 [data-md-color-scheme="slashnew-light"] .sn-landing {
   background:
-    radial-gradient(ellipse at 50% 40%, rgba(139, 127, 214, 0.55), transparent 65%),
-    radial-gradient(ellipse at 20% 10%, rgba(91, 79, 184, 0.45), transparent 60%),
-    linear-gradient(180deg, #2a1f6e 0%, #1a1230 100%);
+    radial-gradient(ellipse at 50% 40%, rgba(109, 168, 50, 0.55), transparent 65%),
+    radial-gradient(ellipse at 20% 10%, rgba(61, 112, 22, 0.45), transparent 60%),
+    linear-gradient(180deg, #1a3608 0%, #0a1505 100%);
 }
 
 .sn-landing h1 {
@@ -325,7 +325,7 @@ body,
   border-color: #ffffff;
 }
 
-/* Grid of chapters — 3 columns on desktop, responsive down to 1 */
+/* Grid of chapters: 3 columns on desktop, responsive down to 1 */
 .sn-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -343,19 +343,19 @@ body,
   overflow: hidden;
   text-decoration: none !important;
   color: var(--md-typeset-color) !important;
-  border: 1px solid rgba(167, 139, 250, 0.14);
+  border: 1px solid rgba(146, 208, 80, 0.14);
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 [data-md-color-scheme="slashnew-light"] .sn-card {
   background: #ffffff;
-  border: 1px solid rgba(91, 79, 184, 0.25);
-  box-shadow: 0 2px 14px rgba(91, 79, 184, 0.08);
+  border: 1px solid rgba(61, 112, 22, 0.25);
+  box-shadow: 0 2px 14px rgba(61, 112, 22, 0.08);
 }
 
 .sn-card:hover {
   transform: translateY(-4px);
-  border-color: var(--sn-purple-bright);
-  box-shadow: 0 14px 40px rgba(91, 79, 184, 0.35);
+  border-color: var(--sn-green-bright);
+  box-shadow: 0 14px 40px rgba(61, 112, 22, 0.35);
 }
 
 .sn-card img {
@@ -380,11 +380,11 @@ body,
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--sn-purple-bright) !important;
+  color: var(--sn-green-bright) !important;
   margin: 0;
 }
 [data-md-color-scheme="slashnew-light"] .sn-card .sn-cat {
-  color: var(--sn-purple-deep) !important;
+  color: var(--sn-green-deep) !important;
 }
 
 .sn-card h3 {
@@ -407,14 +407,14 @@ body,
   margin-top: 0.4rem;
   font-weight: 600;
   font-size: 0.92rem;
-  color: var(--sn-purple-bright) !important;
+  color: var(--sn-green-bright) !important;
 }
 [data-md-color-scheme="slashnew-light"] .sn-card .sn-read {
-  color: var(--sn-purple-deep) !important;
+  color: var(--sn-green-deep) !important;
 }
 
 /* =========================================================
-   Code blocks — ensure no grey text
+   Code blocks: ensure no grey text
    ========================================================= */
 .md-typeset code,
 .md-typeset pre {
@@ -440,13 +440,13 @@ body,
 }
 
 /* =========================================================
-   Accessibility — visible focus ring
+   Accessibility: visible focus ring
    ========================================================= */
 a:focus-visible,
 button:focus-visible,
 .sn-card:focus-visible,
 .md-nav__link:focus-visible {
-  outline: 3px solid var(--sn-purple-bright);
+  outline: 3px solid var(--sn-green-bright);
   outline-offset: 3px;
   border-radius: 4px;
 }

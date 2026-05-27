@@ -7,7 +7,7 @@ description: "We're inside the inflection. Why "general-purpose reasoning in the
 
 <a class="sn-back" href="../../">← Back</a>
 
-<img src="../../assets/5-themoment.png" alt="Hero illustration for chapter 05 — The Moment">
+<img src="../../assets/5-themoment.png" alt="Hero illustration for chapter 05, The Moment">
 
 <div class="sn-cat">Context</div>
 
@@ -20,7 +20,7 @@ description: "We're inside the inflection. Why "general-purpose reasoning in the
 
 I want to be careful with hype. But I also want to be honest: something genuinely new is happening in software.
 
-For most of my career, the bottleneck on a team has been **typing-speed-of-thought** — how fast we can translate an idea into working code. We're now living through the first technology that meaningfully moves that bottleneck.
+For most of my career, the bottleneck on a team has been **typing-speed-of-thought**, how fast we can translate an idea into working code. We're now living through the first technology that meaningfully moves that bottleneck.
 
 That doesn't mean engineers are obsolete. It means the *shape* of engineering is changing.
 

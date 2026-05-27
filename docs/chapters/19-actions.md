@@ -7,7 +7,7 @@ description: "Five concrete things to do on Monday. No theory. Just the next mov
 
 <a class="sn-back" href="../../">← Back</a>
 
-<img src="../../assets/19-actions.png" alt="Hero illustration for chapter 19 — Take Action">
+<img src="../../assets/19-actions.png" alt="Hero illustration for chapter 19, Take Action">
 
 <div class="sn-cat">Closing</div>
 
@@ -38,7 +38,7 @@ If you have any agentic system writing changes, route it through a pull request 
 
 ### 5. Schedule a "what surprised us" session
 
-Half an hour. Once a month. With the team. See [Chapter 18 — Leading with Empathy](18-empathy.md).
+Half an hour. Once a month. With the team. See [Chapter 18, Leading with Empathy](18-empathy.md).
 
 ## That's it
 

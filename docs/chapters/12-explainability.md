@@ -7,7 +7,7 @@ description: ""Because the model said so" is not an answer. Designing systems th
 
 <a class="sn-back" href="../../">← Back</a>
 
-<img src="../../assets/12-explainability.png" alt="Hero illustration for chapter 12 — Explainability">
+<img src="../../assets/12-explainability.png" alt="Hero illustration for chapter 12, Explainability">
 
 <div class="sn-cat">Framework</div>
 
@@ -26,9 +26,9 @@ The good news: you don't need a PhD in interpretability to do it well. You need 
 
 Think of explainability as three concentric layers:
 
-1. **What it did** — the action, the inputs, the output, timestamped.
-2. **Why it chose that** — the prompt, the retrieved context, the tools called, the confidence.
-3. **How the model works at all** — the model card, the training data summary, the known limitations.
+1. **What it did**, the action, the inputs, the output, timestamped.
+2. **Why it chose that**, the prompt, the retrieved context, the tools called, the confidence.
+3. **How the model works at all**, the model card, the training data summary, the known limitations.
 
 Most products only ship layer 1. The trust gap is layers 2 and 3.
 
@@ -36,7 +36,7 @@ Most products only ship layer 1. The trust gap is layers 2 and 3.
 
 - **Citation chips** next to AI-generated answers, linking to the source documents.
 - **"Show reasoning"** disclosure that surfaces the plan or chain-of-thought summary.
-- **A model card** linked from every AI feature — what it is, what it isn't, who owns it.
+- **A model card** linked from every AI feature, what it is, what it isn't, who owns it.
 - **An audit log** the user can view, not just the platform team.
 
 > If you can't explain it to the user, you can't expect them to trust it. And if you can't explain it to yourself, you shouldn't have shipped it.

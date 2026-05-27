@@ -7,7 +7,7 @@ description: "HITL done well is empowering, not theatre. A practical pattern cat
 
 <a class="sn-back" href="../../">← Back</a>
 
-<img src="../../assets/7-hitl.png" alt="Hero illustration for chapter 07 — Human in the Loop">
+<img src="../../assets/7-hitl.png" alt="Hero illustration for chapter 07, Human in the Loop">
 
 <div class="sn-cat">Practice</div>
 

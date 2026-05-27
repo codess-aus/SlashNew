@@ -7,7 +7,7 @@ description: "How to do AI governance without becoming the team everyone routes 
 
 <a class="sn-back" href="../../">← Back</a>
 
-<img src="../../assets/17-governance.png" alt="Hero illustration for chapter 17 — Governance">
+<img src="../../assets/17-governance.png" alt="Hero illustration for chapter 17, Governance">
 
 <div class="sn-cat">Leadership</div>
 
@@ -35,7 +35,7 @@ The goal is the middle: **light-touch, high-trust, well-instrumented.**
 
 ## Make the right thing the easy thing
 
-The most successful governance teams I've worked with don't *gate* — they *enable*. They ship:
+The most successful governance teams I've worked with don't *gate*, they *enable*. They ship:
 
 - A blessed prompt library.
 - A blessed eval harness.

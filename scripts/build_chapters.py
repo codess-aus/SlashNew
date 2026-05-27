@@ -20,7 +20,7 @@ CHAPTERS = [
         """
 ## Hello, SlashNew
 
-Thanks for being here. I'm **@Codess-Aus**, and for the next 45 minutes I want to talk to you about something that has been keeping me — and a lot of the engineers I work with — awake at night.
+Thanks for being here. I'm **@Codess-Aus**, and for the next 45 minutes I want to talk to you about something that has been keeping me, and a lot of the engineers I work with, awake at night.
 
 We are shipping AI faster than we are learning to govern it.
 
@@ -45,19 +45,19 @@ That's it. That's the whole talk. The next 21 chapters are just different ways o
         """
 ## What we'll cover
 
-1. **Rule Zero** — the non-negotiable that sits above every other decision.
-2. **The Right Way** — what Microsoft's Responsible AI Standard actually asks of us.
-3. **Trust as UX** — designing for confidence, not just correctness.
-4. **Human in the loop** — patterns that work, and theatre that doesn't.
-5. **Principles, explainability, reliability, inclusivity** — the engineering translation.
-6. **Real-world stories** — three case studies, including one that broke.
-7. **The three waves** — autocomplete, chat, agents.
-8. **Governance and empathy** — leading teams through the change.
-9. **Take action** — five things to do on Monday.
+1. **Rule Zero**, the non-negotiable that sits above every other decision.
+2. **The Right Way**, what Microsoft's Responsible AI Standard actually asks of us.
+3. **Trust as UX**, designing for confidence, not just correctness.
+4. **Human in the loop**, patterns that work, and theatre that doesn't.
+5. **Principles, explainability, reliability, inclusivity**, the engineering translation.
+6. **Real-world stories**, lessons from the field.
+7. **The three waves**, autocomplete, chat, agents.
+8. **Governance and empathy**, leading teams through the change.
+9. **Take action**, five things to do on Monday.
 
 ## How to read this
 
-Each chapter is short on purpose. You should be able to skim the whole thing in a coffee break, or sink into one chapter for a team discussion. There are no slides hidden from you — this site *is* the talk.
+Each chapter is short on purpose. You should be able to skim the whole thing in a coffee break, or sink into one chapter for a team discussion. There are no slides hidden from you, this site *is* the talk.
 """,
     ),
     (
@@ -68,11 +68,11 @@ Each chapter is short on purpose. You should be able to skim the whole thing in 
 
 > **Don't ship AI you wouldn't be comfortable being on the receiving end of.**
 
-That's it. Everything else in this talk — the principles, the eval suites, the governance boards — is just engineering against that one rule.
+That's it. Everything else in this talk, the principles, the eval suites, the governance boards, is just engineering against that one rule.
 
 ## Why we need a rule above the rules
 
-Standards are great. The [Microsoft Responsible AI Standard](https://www.microsoft.com/ai/responsible-ai), the NIST AI Risk Management Framework, the EU AI Act — they're all genuinely useful. But standards describe the floor. Rule Zero describes the **posture**.
+Standards are great. The [Microsoft Responsible AI Standard](https://www.microsoft.com/ai/responsible-ai), the NIST AI Risk Management Framework, the EU AI Act, they're all genuinely useful. But standards describe the floor. Rule Zero describes the **posture**.
 
 You can comply with every standard on earth and still ship something gross. We've all seen it. The model card was fine. The DPIA was filed. And the product still made someone's day worse.
 
@@ -119,7 +119,7 @@ Those three artefacts will get you 80% of the value of the Standard, today.
 ## Further reading
 
 - [Microsoft Responsible AI Standard v2](https://www.microsoft.com/ai/responsible-ai)
-- [Microsoft Learn — Responsible AI principles](https://learn.microsoft.com/training/modules/responsible-ai-principles/)
+- [Microsoft Learn, Responsible AI principles](https://learn.microsoft.com/training/modules/responsible-ai-principles/)
 """,
     ),
     (
@@ -132,10 +132,10 @@ Engineers love to treat trust as a *correctness* problem. "If the model is right
 
 That isn't how humans work. People trust systems that are:
 
-- **Predictable** — same input, same shape of answer.
-- **Legible** — I can see what it did and why.
-- **Recoverable** — when it's wrong, I can fix it without drama.
-- **Bounded** — I know what it *won't* do.
+- **Predictable**, same input, same shape of answer.
+- **Legible**, I can see what it did and why.
+- **Recoverable**, when it's wrong, I can fix it without drama.
+- **Bounded**, I know what it *won't* do.
 
 You can have a 99% accurate model that nobody trusts, and an 85% accurate one that an entire team relies on. The difference is almost always one of those four things.
 
@@ -151,11 +151,11 @@ If your feature can't honour that sentence, the answer isn't "ship anyway and ad
 
 For agentic actions in GitHub Copilot, the trust contract often looks like:
 
-1. **Plan** — show the steps before running.
-2. **Confirm** — let the human approve, edit or reject.
-3. **Execute** — stream the work, file by file.
-4. **Diff** — show what changed, in a reviewable form.
-5. **Revert** — one button, no questions.
+1. **Plan**, show the steps before running.
+2. **Confirm**, let the human approve, edit or reject.
+3. **Execute**, stream the work, file by file.
+4. **Diff**, show what changed, in a reviewable form.
+5. **Revert**, one button, no questions.
 
 That loop is why people trust agent mode. Take any of those steps out and trust collapses.
 """,
@@ -168,7 +168,7 @@ That loop is why people trust agent mode. Take any of those steps out and trust 
 
 I want to be careful with hype. But I also want to be honest: something genuinely new is happening in software.
 
-For most of my career, the bottleneck on a team has been **typing-speed-of-thought** — how fast we can translate an idea into working code. We're now living through the first technology that meaningfully moves that bottleneck.
+For most of my career, the bottleneck on a team has been **typing-speed-of-thought**, how fast we can translate an idea into working code. We're now living through the first technology that meaningfully moves that bottleneck.
 
 That doesn't mean engineers are obsolete. It means the *shape* of engineering is changing.
 
@@ -190,7 +190,7 @@ The moment is real. The fundamentals are the same.
     ),
     (
         "06-feature", "6-feature.png", "06", "It's a Feature, Not a Bug", "Mindset",
-        "Hallucinations, uncertainty, refusal — sometimes they're the product working.",
+        "Hallucinations, uncertainty, refusal, sometimes they're the product working.",
         """
 ## Reframing the "bug" list
 
@@ -204,7 +204,7 @@ Here's the uncomfortable take: all three are often the product working as intend
 
 ## Hallucination as a calibration problem
 
-A model that generates fluent, plausible text *will* generate fluent, plausible text even when it doesn't know. That's not a bug — that's how generative systems behave. The bug is shipping that text without **grounding** (retrieval, tools, citations) and without a UX that signals uncertainty.
+A model that generates fluent, plausible text *will* generate fluent, plausible text even when it doesn't know. That's not a bug, that's how generative systems behave. The bug is shipping that text without **grounding** (retrieval, tools, citations) and without a UX that signals uncertainty.
 
 Fix the system, not the model.
 
@@ -214,7 +214,7 @@ A model that refuses to help you write a phishing email is doing exactly what we
 
 ## "I'm not sure" as a gift
 
-If your model can tell you it's uncertain, **expose that in the UI**. A confidence band, a "verify this" badge, a citation link — these are how you turn a probabilistic system into a trustworthy one.
+If your model can tell you it's uncertain, **expose that in the UI**. A confidence band, a "verify this" badge, a citation link, these are how you turn a probabilistic system into a trustworthy one.
 
 The features we used to call bugs are the surface area you build trust on top of.
 """,
@@ -260,7 +260,7 @@ Pick the pattern that matches the **blast radius** of the decision, not the conv
 
 Every few weeks someone publishes a "X% of engineering jobs will be automated" piece. They are mostly wrong, and they are mostly wrong in the same way: they confuse **tasks** with **jobs**.
 
-Yes, a lot of tasks I used to do by hand — boilerplate, scaffolding, first-draft docs, glue code — are now one prompt away. That's good. None of that was the job.
+Yes, a lot of tasks I used to do by hand, boilerplate, scaffolding, first-draft docs, glue code, are now one prompt away. That's good. None of that was the job.
 
 The job was, and is:
 
@@ -303,21 +303,21 @@ You can have approval everywhere and oversight nowhere. The signs:
 ## What meaningful oversight looks like
 
 - **Diversity.** More than one person can review. Reviewers rotate.
-- **Context.** Reviewers see the inputs, the plan, the model's reasoning and the proposed action — together.
+- **Context.** Reviewers see the inputs, the plan, the model's reasoning and the proposed action, together.
 - **Time.** There's a reasonable SLA, not "instant or it blocks production."
 - **Symmetry.** Rejecting is as easy as approving, and rejection produces a useful artefact (a comment, a label, a follow-up issue).
 - **Audit.** Every decision is queryable months later.
 
 ## The GitHub-shaped version
 
-GitHub gives you most of this for free: pull requests, required reviewers, branch protections, audit logs, CODEOWNERS. If your AI system is producing changes that live outside that system, you have rebuilt — badly — what you already had.
+GitHub gives you most of this for free: pull requests, required reviewers, branch protections, audit logs, CODEOWNERS. If your AI system is producing changes that live outside that system, you have rebuilt, badly, what you already had.
 
 > Whenever possible, **make the agent's output a PR**, and let your existing review culture do the work.
 """,
     ),
     (
         "10-dm", "10-dm.png", "10", "Decision Making with AI", "Practice",
-        "How to use models for decisions that matter — without outsourcing accountability with them.",
+        "How to use models for decisions that matter, without outsourcing accountability with them.",
         """
 ## Decisions vs. drafts
 
@@ -332,7 +332,7 @@ The trick is to be honest about which mode you're in.
 | Deciding | Recommend, with reasoning. | Decide, on the record. |
 | Acting | Execute approved decisions. | Define guardrails, monitor. |
 
-You get into trouble when you slide from one mode to the next without noticing — usually from "filtering" into "deciding" because the volume got too high to review.
+You get into trouble when you slide from one mode to the next without noticing, usually from "filtering" into "deciding" because the volume got too high to review.
 
 ## A decision-grade checklist
 
@@ -344,7 +344,7 @@ For any AI-assisted decision that affects a person:
 - [ ] The affected person can ask why, and get a real answer.
 - [ ] There is a path to challenge the decision.
 
-If you can't tick those five, you are not making a decision — you are *delegating accountability* to a system that can't hold it.
+If you can't tick those five, you are not making a decision, you are *delegating accountability* to a system that can't hold it.
 """,
     ),
     (
@@ -355,12 +355,12 @@ If you can't tick those five, you are not making a decision — you are *delegat
 
 Microsoft's Responsible AI principles are:
 
-1. **Fairness** — treat people equitably.
-2. **Reliability & Safety** — perform as intended, safely.
-3. **Privacy & Security** — protect data and systems.
-4. **Inclusiveness** — work for the full range of human experience.
-5. **Transparency** — be understandable.
-6. **Accountability** — humans remain responsible.
+1. **Fairness**, treat people equitably.
+2. **Reliability & Safety**, perform as intended, safely.
+3. **Privacy & Security**, protect data and systems.
+4. **Inclusiveness**, work for the full range of human experience.
+5. **Transparency**, be understandable.
+6. **Accountability**, humans remain responsible.
 
 They sound abstract. They aren't. Each one maps to engineering behaviour you already know how to do.
 
@@ -396,9 +396,9 @@ The good news: you don't need a PhD in interpretability to do it well. You need 
 
 Think of explainability as three concentric layers:
 
-1. **What it did** — the action, the inputs, the output, timestamped.
-2. **Why it chose that** — the prompt, the retrieved context, the tools called, the confidence.
-3. **How the model works at all** — the model card, the training data summary, the known limitations.
+1. **What it did**, the action, the inputs, the output, timestamped.
+2. **Why it chose that**, the prompt, the retrieved context, the tools called, the confidence.
+3. **How the model works at all**, the model card, the training data summary, the known limitations.
 
 Most products only ship layer 1. The trust gap is layers 2 and 3.
 
@@ -406,7 +406,7 @@ Most products only ship layer 1. The trust gap is layers 2 and 3.
 
 - **Citation chips** next to AI-generated answers, linking to the source documents.
 - **"Show reasoning"** disclosure that surfaces the plan or chain-of-thought summary.
-- **A model card** linked from every AI feature — what it is, what it isn't, who owns it.
+- **A model card** linked from every AI feature, what it is, what it isn't, who owns it.
 - **An audit log** the user can view, not just the platform team.
 
 > If you can't explain it to the user, you can't expect them to trust it. And if you can't explain it to yourself, you shouldn't have shipped it.
@@ -414,7 +414,7 @@ Most products only ship layer 1. The trust gap is layers 2 and 3.
     ),
     (
         "13-reliability", "13-reliability.png", "13", "Reliability & Safety", "Framework",
-        "Evals, red teaming, regression budgets — reliability as a first-class engineering metric.",
+        "Evals, red teaming, regression budgets, reliability as a first-class engineering metric.",
         """
 ## Reliability is the unsexy superpower
 
@@ -424,7 +424,7 @@ Everyone wants to talk about capability. The teams quietly winning are the ones 
 
 - **Offline evals.** A golden set of prompts with expected behaviour, run in CI. Block merges on regression.
 - **Online evals.** Sample real traffic, score it, dashboard it. Watch trends weekly.
-- **Red teaming.** Adversarial prompts, jailbreaks, prompt injection — done by a dedicated rotation, not "whoever is free."
+- **Red teaming.** Adversarial prompts, jailbreaks, prompt injection, done by a dedicated rotation, not "whoever is free."
 - **Regression budgets.** A defined tolerance for behavioural drift. When you blow the budget, you stop, you don't ship around it.
 - **Kill switches.** Per-feature, per-tenant, per-tool. Tested quarterly. Documented.
 
@@ -435,11 +435,11 @@ Treat safety the way you treat security: as architecture, not vibes.
 - **Input filters** for known-bad patterns.
 - **Output filters** for sensitive categories.
 - **Tool sandboxing** so the agent can't do what it shouldn't, even if it tries.
-- **Rate limits** and **scope limits** as primary safety controls — not afterthoughts.
+- **Rate limits** and **scope limits** as primary safety controls, not afterthoughts.
 
 ## Further reading
 
-- [Microsoft Learn — Evaluate generative AI models](https://learn.microsoft.com/azure/ai-studio/concepts/evaluation-approach-gen-ai)
+- [Microsoft Learn, Evaluate generative AI models](https://learn.microsoft.com/azure/ai-studio/concepts/evaluation-approach-gen-ai)
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 """,
     ),
@@ -456,37 +456,37 @@ A model that performs brilliantly for one demographic and poorly for another isn
 ## A practical playbook
 
 - **Disaggregate your evals.** Don't just report aggregate accuracy. Slice by language, region, dialect, ability, age, device.
-- **Include disabled users in research.** Not as a checkbox at the end — as participants from week one.
+- **Include disabled users in research.** Not as a checkbox at the end, as participants from week one.
 - **Test with assistive tech.** Screen readers, voice control, switch input, high contrast. If your AI UI breaks under a screen reader, the whole feature is broken.
 - **Write copy for the widest plausible reader.** Plain language, defined acronyms, no idioms that don't travel.
 - **Localize, don't just translate.** A literal translation of an English UI is rarely an inclusive UI.
 
 ## Where AI specifically helps
 
-Agentic AI is genuinely amazing for accessibility — voice interfaces, summarization, real-time translation, alt-text generation. We have a responsibility to ship those wins, not just talk about them.
+Agentic AI is genuinely amazing for accessibility, voice interfaces, summarization, real-time translation, alt-text generation. We have a responsibility to ship those wins, not just talk about them.
 
 > Build for the edges and the middle takes care of itself. Build only for the middle and you leave people behind.
 """,
     ),
     (
         "15-realworld", "15-realworld.png", "15", "Real-World Stories", "Stories",
-        "Three short case studies — what worked, what broke, and what we learned.",
+        "Three short case studies, what worked, what broke, and what we learned.",
         """
-## Story 1 — The triage agent that worked
+## Story 1, The triage agent that worked
 
 A platform team built a Copilot-driven triage agent for their issue tracker. It read new issues, suggested labels, owners and priority, and posted as a draft comment. A human always pressed the button.
 
-**Why it worked:** the agent never *acted* — it always *suggested*. Approval was the default human workflow anyway. Median triage time dropped 60% in eight weeks. Nobody felt replaced. Several engineers said it was the first internal AI tool they actually liked.
+**Why it worked:** the agent never *acted*, it always *suggested*. Approval was the default human workflow anyway. Median triage time dropped 60% in eight weeks. Nobody felt replaced. Several engineers said it was the first internal AI tool they actually liked.
 
-## Story 2 — The PR bot that broke
+## Story 2, The PR bot that broke
 
-Another team wired an agent to auto-close stale PRs and post a templated comment. It went well for three weeks. Then a long-running fork-of-a-fork PR — the only path to a critical hotfix — got auto-closed at 2 a.m. on a Sunday.
+Another team wired an agent to auto-close stale PRs and post a templated comment. It went well for three weeks. Then a long-running fork-of-a-fork PR, the only path to a critical hotfix, got auto-closed at 2 a.m. on a Sunday.
 
-**Why it broke:** no blast-radius thinking. The agent had no awareness of *which* PRs were safe to close. The fix wasn't to make the agent smarter. The fix was to **scope it** — only close PRs older than 90 days *and* with no commits from CODEOWNERS *and* with no linked incident.
+**Why it broke:** no blast-radius thinking. The agent had no awareness of *which* PRs were safe to close. The fix wasn't to make the agent smarter. The fix was to **scope it**, only close PRs older than 90 days *and* with no commits from CODEOWNERS *and* with no linked incident.
 
-## Story 3 — The eval suite that saved us
+## Story 3, The eval suite that saved us
 
-A team shipped a customer-facing summarization feature. Two months in, a routine model update silently changed tone — summaries became more confident and less hedged. Nobody noticed until a customer complained.
+A team shipped a customer-facing summarization feature. Two months in, a routine model update silently changed tone, summaries became more confident and less hedged. Nobody noticed until a customer complained.
 
 The eval suite caught it on the next run, with a regression on the "hedging" axis. The team rolled back the model in 40 minutes. Without the eval suite, this would have been a much worse story.
 
@@ -501,21 +501,21 @@ The eval suite caught it on the next run, with a regression on the "hedging" axi
 
 We've lived through three distinct waves of developer AI in a very short time.
 
-### Wave 1 — Autocomplete
+### Wave 1, Autocomplete
 
 Inline suggestions. Low stakes. The human is in the driver's seat for every keystroke. "Good" means *useful suggestions that don't slow me down*.
 
-### Wave 2 — Chat
+### Wave 2, Chat
 
 Conversational assistants in the IDE and the browser. The human asks, the model answers. "Good" means *accurate, grounded, well-cited answers I can act on*.
 
-### Wave 3 — Agents
+### Wave 3, Agents
 
 The model takes multi-step actions on your behalf, using tools, across files, sometimes across systems. The human reviews **outcomes**, not keystrokes. "Good" now means *predictable plans, reviewable diffs, and reversibility*.
 
 ## Why this matters
 
-The governance model that worked for Wave 1 — basically, "let people use it" — does not work for Wave 3. Agents change:
+The governance model that worked for Wave 1, basically, "let people use it", does not work for Wave 3. Agents change:
 
 - The **blast radius** (multi-file, multi-system).
 - The **review surface** (plans and diffs, not lines).
@@ -548,7 +548,7 @@ The goal is the middle: **light-touch, high-trust, well-instrumented.**
 
 ## Make the right thing the easy thing
 
-The most successful governance teams I've worked with don't *gate* — they *enable*. They ship:
+The most successful governance teams I've worked with don't *gate*, they *enable*. They ship:
 
 - A blessed prompt library.
 - A blessed eval harness.
@@ -613,7 +613,7 @@ If you have any agentic system writing changes, route it through a pull request 
 
 ### 5. Schedule a "what surprised us" session
 
-Half an hour. Once a month. With the team. See [Chapter 18 — Leading with Empathy](18-empathy.md).
+Half an hour. Once a month. With the team. See [Chapter 18, Leading with Empathy](18-empathy.md).
 
 ## That's it
 
@@ -622,14 +622,14 @@ You don't need to boil the ocean. You need to ship the next thing **responsibly*
     ),
     (
         "20-resources", "20-resources.png", "20", "Resources", "Closing",
-        "Microsoft Learn paths, GitHub docs, books and tools — the curated reading list behind the talk.",
+        "Microsoft Learn paths, GitHub docs, books and tools, the curated reading list behind the talk.",
         """
 ## Microsoft Learn
 
 - [Responsible AI principles and approach](https://learn.microsoft.com/training/modules/responsible-ai-principles/)
 - [Evaluate generative AI models](https://learn.microsoft.com/azure/ai-studio/concepts/evaluation-approach-gen-ai)
 - [Plan and prepare to develop AI solutions responsibly](https://learn.microsoft.com/training/paths/responsible-ai-business-principles/)
-- [Microsoft Cloud Adoption Framework — AI](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/)
+- [Microsoft Cloud Adoption Framework, AI](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/)
 
 ## GitHub
 
@@ -643,14 +643,14 @@ You don't need to boil the ocean. You need to ship the next thing **responsibly*
 - [Microsoft Responsible AI Standard v2](https://www.microsoft.com/ai/responsible-ai)
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-- [EU AI Act — high-level summary](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
+- [EU AI Act, high-level summary](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
 
 ## Books I keep coming back to
 
-- *Weapons of Math Destruction* — Cathy O'Neil
-- *The Alignment Problem* — Brian Christian
-- *Atlas of AI* — Kate Crawford
-- *Designing Machine Learning Systems* — Chip Huyen
+- *Weapons of Math Destruction*, Cathy O'Neil
+- *The Alignment Problem*, Brian Christian
+- *Atlas of AI*, Kate Crawford
+- *Designing Machine Learning Systems*, Chip Huyen
 
 ## The meta-resource
 
@@ -658,7 +658,7 @@ You don't need to boil the ocean. You need to ship the next thing **responsibly*
 """,
     ),
     (
-        "21-trust", "21-trust.png", "21", "Closing — Trust, Again", "Closing",
+        "21-trust", "21-trust.png", "21", "Closing, Trust, Again", "Closing",
         "We end where we started. Trust isn't a slide at the end of the deck. It's the whole product.",
         """
 ## Back to the beginning
@@ -667,7 +667,7 @@ We started with one question:
 
 > *Would I trust this system to make this decision about me, my family, or my customer?*
 
-Everything in between — the principles, the evals, the governance, the empathy — was just engineering toward a confident **yes**.
+Everything in between, the principles, the evals, the governance, the empathy, was just engineering toward a confident **yes**.
 
 ## The takeaway
 
@@ -676,7 +676,7 @@ You are going to ship AI. A lot of it. Faster than you ever shipped anything els
 The good news: the playbook isn't mysterious. It looks like the playbook for every other piece of high-stakes software you've ever shipped:
 
 - **Know who it's for.**
-- **Know what it does — and what it doesn't.**
+- **Know what it does, and what it doesn't.**
 - **Test it like you mean it.**
 - **Make it reviewable.**
 - **Own it when it's wrong.**
@@ -686,11 +686,11 @@ Do those six things, again and again, and trust shows up.
 
 ## Thank you
 
-Thank you for sitting through this. Thank you for the work you're going to do next week that nobody will see — the eval you'll add, the disclosure you'll write, the "no" you'll say. That work is how this whole thing stays good.
+Thank you for sitting through this. Thank you for the work you're going to do next week that nobody will see, the eval you'll add, the disclosure you'll write, the "no" you'll say. That work is how this whole thing stays good.
 
 I'm **@Codess-Aus**. Come find me. Let's keep building.
 
-— *Scaling Guacamole, SlashNew Conf 2026.*
+, *Scaling Guacamole, SlashNew Conf 2026.*
 """,
     ),
 ]
@@ -707,7 +707,7 @@ def render(slug, image, number, title, category, lede, body):
 
     <a class="sn-back" href="../../">← Back</a>
 
-    <img src="../../assets/{image}" alt="Hero illustration for chapter {number} — {title}">
+    <img src="../../assets/{image}" alt="Hero illustration for chapter {number}, {title}">
 
     <div class="sn-cat">{category}</div>
 
